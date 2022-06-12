@@ -6,6 +6,8 @@
 
 If it exits with instructions, follow the displayed instructions and then rerun `setup.sh` to proceed with the setup.
 
+Once it exits without any displayed instructions, you are able to activate your new python environment with `conda activate dialogue_eval` which is configured to run the platform.
+
 ---
 
 # Execution
