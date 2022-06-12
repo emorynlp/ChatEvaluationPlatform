@@ -1,0 +1,485 @@
+{
+    "config": {
+        "transitions": {
+            "config": "button_flow",
+            "task_title": "transitions",
+            "indices": "odd",
+            "require": {"level":  "turn"},
+            "options": {
+  "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": {
+    "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.": {},
+    "No, SPEAKER_X ignored SPEAKER_Y.": {},
+    "Not applicable, what SPEAKER_Y just said does not require a response or acknowledgement from SPEAKER_X.": {}
+  },
+  "Is SPEAKER_X introducing a new topic?": {
+    "Yes, SPEAKER_X is changing the topic of the conversation.": {},
+    "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.": {},
+    "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.": {}
+  },
+  "Is SPEAKER_X's response appropriately relevant?": {
+    "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion.": {},
+    "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant.": {}
+  }
+            }
+        },
+      "knowledge": {
+            "config": "nondetails_button_flow",
+            "task_title": "knowledge",
+            "indices": "odd",
+            "require": {"level":  "turn"},
+            "options": {
+  "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": {
+    "_type_": {
+      "checkbox": {}
+    },
+    "SPEAKER_X's response incorporates or assumes at least one fact.": {
+      "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": {
+        "Yes, I know for sure ALL facts are accurate.": {},
+        "No, I know for sure that one of the facts is inaccurate, false, or highly implausible.": {},
+        "It is misleading for SPEAKER_X to claim or assume one of the facts, because there is no way that SPEAKER_X knows whether that fact is accurate.": {},
+        "I don't know for sure whether ALL of the facts are accurate.": {
+          "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": {
+            "ALL facts are accurate; a credible source verified the facts in my search.": {},
+            "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible.": {},
+            "My search revealed multiple credible sources that disagreed about whether one of the facts was true.": {},
+            "I couldn't find enough credible evidence in my search to either verify or falsify one of the facts.": {}
+          }
+        }
+      }
+    }
+  }
+            }
+        },
+      "grammar": {
+            "config": "nondetails_nonhelp_button_flow",
+            "task_title": "grammar",
+            "indices": "odd",
+            "options": {
+              "grammar_q": {
+                "_type_": {
+                  "checkbox": {}
+                },
+                "This response is uninterpretable.": {}
+              }
+            }
+        },
+      "sociality":  {
+            "config": "nondetails_nonhelp_button_flow",
+            "task_title": "sociality",
+            "indices": "odd",
+            "options": {
+              "sociality_q": {
+                "_type_": {
+                  "checkbox": {}
+                },
+                "This response exhibits antisocial behavior.": {}
+              }
+            }
+        },
+      "commonsense": {
+            "config": "nondetails_nonhelp_button_flow",
+            "task_title": "commonsense",
+            "indices": "odd",
+            "options": {
+              "commonsense_q": {
+                "_type_": {
+                  "checkbox": {}
+                },
+                "This response contradicts common knowledge.": {}
+              }
+            }
+        },
+      "empathy": {
+            "config": "nondetails_nonhelp_button_flow",
+            "task_title": "empathy",
+            "indices": "odd",
+            "require": {"level":  "turn"},
+            "options": {
+              "Is this response empathetic?": {
+                "Yes, the speaker demonstrates an understanding of their partner's emotions.": {},
+                "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings.": {},
+                "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions.": {}
+              }
+            }
+        },
+      "personal_information": {
+            "config": "nondetails_nonhelp_button_flow",
+            "task_title": "personal_information",
+            "indices": "odd",
+            "options": {
+              "value_q": {
+                "_type_": {
+                  "checkbox": {}
+                },
+                "This response shares information about the speaker's preferences/values.": {}
+              },
+              "experience_q": {
+                "_type_": {
+                  "checkbox": {}
+                },
+                "This response shares information about the speaker's life.": {}
+              }
+            }
+        },
+      "consistency_label": {
+            "question": "Select ALL labels that apply:",
+            "config": "multiselect",
+            "task_title": "consistency_label",
+            "indices": "odd",
+            "options": [
+              {"value": "cont_s_ctxt", "label": "Contradicts self context"},
+              {"value": "cont_p_ctxt", "label": "Contradicts partner context"},
+              {"value": "redundant", "label":  "Redundant"}
+            ]
+        },
+      "consistency_label_withprofile": {
+            "question": "Select ALL labels that apply:",
+            "config": "multiselect",
+            "task_title": "consistency_label",
+            "indices": "odd",
+            "options": [
+              {"value":  "use_profile", "label":  "Uses profile"},
+              {"value": "cont_profile", "label": "Contradicts profile"},
+              {"value": "cont_s_ctxt", "label": "Contradicts self context"},
+              {"value": "cont_p_ctxt", "label": "Contradicts partner context"},
+              {"value": "redundant", "label":  "Redundant"}
+            ]
+        },
+        "response_likert": {
+          "question": "On a scale of 1 (least) to 5 (most), to what degree is this response:",
+            "config": "foreach-5-select",
+            "task_title": "response_likert",
+            "indices": "odd",
+            "options": [
+              { "value": "Grammatical", "label": "Grammatical" },
+              { "value": "Relevant", "label": "Relevant" },
+              { "value": "Informative", "label": "Informative" },
+              { "value": "Emotion Aware", "label": "Emotion Aware"},
+              { "value": "Engaging", "label": "Engaging"},
+              { "value": "Consistent", "label": "Consistent" },
+              { "value": "Proactive", "label": "Proactive" },
+              { "value": "Quality", "label": "Quality" }
+            ]
+        },
+      "dialogue_likert": {
+          "question": "On a scale of 1 (least) to 5 (most), to what degree is this dialogue:",
+            "config": "foreach-5-select-dialogue",
+            "task_title": "dialogue_likert",
+            "indices": "no_indices",
+            "options": [
+              { "value": "Grammatical", "label": "Grammatical" },
+              { "value": "Relevant", "label": "Relevant" },
+              { "value": "Informative", "label": "Informative" },
+              { "value": "Emotion Aware", "label": "Emotion Aware"},
+              { "value": "Engaging", "label": "Engaging"},
+              { "value": "Consistent", "label": "Consistent" },
+              { "value": "Proactive", "label": "Proactive" },
+              { "value": "Quality", "label": "Quality" }
+            ]
+        },
+      "grammatical_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "grammatical_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Grammatical", "question": "On average, how grammatical were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "frequent semantic or grammar issues",
+              "5": "no semantic or grammar issues"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "relevant_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "relevant_likert",
+            "indices": "no_indices",
+            "options": [
+              {"label": "Relevant", "question": "On average, how relevant were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "rarely responds with a related point",
+              "5": "always responds with a related point"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "informative_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "informative_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Informative", "question": "On average, how informative were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "frequently responds with repetitive or generic points",
+              "5": "never responds with repetitive or generic points"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "emotion_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "emotion_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Emotion Aware", "question": "On average, how emotionally appropriate were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "responses frequently display inappropriate emotional reactions or understanding",
+              "5": "never responds inappropriately to or ignores the emotional context of the previous turns"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "engaging_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "engaging_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Engaging", "question": "On average, how engaging were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "never responds with interesting points",
+              "5": "frequently responds with interesting points"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "consistent_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "consistent_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Consistent", "question": "On average, how consistent were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "frequently contradicts what has been said previously",
+              "5": "never contradicts what has been said previously"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "proactive_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "proactive_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Proactive", "question": "On average, how proactive were SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "never influences the direction of the conversation appropriately",
+              "5": "frequently influences the direction of the conversation appropriately"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "quality_likert": {
+            "config": "likert-5-dialogue",
+            "task_title": "quality_likert",
+            "indices": "no_indices",
+            "options": [
+              { "label": "Quality", "question": "On average, what was the quality of SPEAKER_X's responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "poor",
+              "5": "excellent"
+            },
+            "require": {"level": "dialogue"}
+        },
+      "grammatical_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "grammatical_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Grammatical", "question": "How grammatical was this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "frequent semantic or grammar issues",
+              "5": "no semantic or grammar issues"
+            },
+            "require": {"level": "turn"}
+        },
+      "relevant_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "relevant_likert_turn",
+            "indices": "odd",
+            "options": [
+              {"label": "Relevant", "question": "How relevant was this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "rarely responds with a related point",
+              "5": "always responds with a related point"
+            },
+            "require": {"level": "turn"}
+        },
+      "informative_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "informative_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Informative", "question": "How informative was this response responses on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "frequently responds with repetitive or generic points",
+              "5": "never responds with repetitive or generic points"
+            },
+            "require": {"level": "turn"}
+        },
+      "emotion_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "emotion_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Emotion Aware", "question": "How emotionally appropriate was this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "responses frequently display inappropriate emotional reactions or understanding",
+              "5": "never responds inappropriately to or ignores the emotional context of the previous turns"
+            },
+            "require": {"level": "turn"}
+        },
+      "engaging_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "engaging_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Engaging", "question": "How engaging was this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "never responds with interesting points",
+              "5": "frequently responds with interesting points"
+            },
+            "require": {"level": "turn"}
+        },
+      "consistent_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "consistent_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Consistent", "question": "How consistent was this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "frequently contradicts what has been said previously",
+              "5": "never contradicts what has been said previously"
+            },
+            "require": {"level": "turn"}
+        },
+      "proactive_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "proactive_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Proactive", "question": "How proactive was this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "never influences the direction of the conversation appropriately",
+              "5": "frequently influences the direction of the conversation appropriately"
+            },
+            "require": {"level": "turn"}
+        },
+      "quality_likert_turn": {
+            "config": "likert-5-turn",
+            "task_title": "quality_likert_turn",
+            "indices": "odd",
+            "options": [
+              { "label": "Quality", "question": "What was the quality of this response on a scale of 1 (least) to 5 (most)?"}
+            ],
+            "label_details": {
+              "1": "poor",
+              "5": "excellent"
+            },
+            "require": {"level": "turn"}
+        },
+      "grammatical_comparative": {
+        "question": "On average, SPEAKER_X's responses were more grammatical in which conversation?",
+            "config": "comparative",
+            "task_title": "grammatical_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "relevant_comparative": {
+        "question": "On average, SPEAKER_X's responses were more relevant in which conversation?",
+            "config": "comparative",
+            "task_title": "relevant_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "informative_comparative": {
+        "question": "On average, SPEAKER_X's responses were more informative in which conversation?",
+            "config": "comparative",
+            "task_title": "informative_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "emotion_comparative": {
+        "question": "On average, SPEAKER_X's responses were more emotionally appropriate in which conversation?",
+            "config": "comparative",
+            "task_title": "emotion_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "engaging_comparative": {
+        "question": "On average, SPEAKER_X's responses were more engaging in which conversation?",
+            "config": "comparative",
+            "task_title": "engaging_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "consistent_comparative": {
+        "question": "On average, SPEAKER_X's responses were more consistent in which conversation?",
+            "config": "comparative",
+            "task_title": "consistent_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "proactive_comparative": {
+        "question": "On average, SPEAKER_X's responses were more proactive in which conversation?",
+            "config": "comparative",
+            "task_title": "proactive_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      },
+      "quality_comparative": {
+        "question": "On average, SPEAKER_X's responses were of higher quality in which conversation?",
+            "config": "comparative",
+            "task_title": "quality_comparative",
+            "indices": "no_indices",
+            "options": [
+              "Dialogue 1 (left)",
+              "Dialogue 2 (right)",
+              "There is no difference (only select this option if you cannot distinguish between the two dialogues)"
+            ],
+            "require": {"level": "dialogue"}
+      }
+    }
+}

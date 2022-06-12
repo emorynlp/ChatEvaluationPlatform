@@ -1,0 +1,553 @@
+{
+  "transitions_onboarding_1": {
+    "dialogue_id": "transitions_onboarding_1",
+    "annotation_tasks": [
+      "transitions"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you? i just got back from a dance class. what do you do?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds with a greeting to their partner, then appropriately introduces to an initial topic of conversation. "
+      ],
+      [
+        "user",
+        "I'm okay. I play video games but its cool that you are a dancer."
+      ],
+      [
+        "system",
+        "yeah, i love video games. what kind of video games do you play? do you have a favorite?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker acknowledges their partner's turn by sharing their opinion in reciprocation. The speaker then asks relevant questions that encourage their partner to elaborate on the video games they play."
+      ],
+      [
+        "user",
+        "I like simulation games. My favorite is Harvest Moon or Stardew Valley."
+      ],
+      [
+        "system",
+        "i've never played harvest moon. i'll have to check it out. do you like school?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker appropriately responds to their partner's turn by sharing a their own experience with the mentioned game. The speaker then abruptly switches topics and asks their partner about school. The new topic is irrelevant because it interrupts the current discussion of video games. "
+      ],
+      [
+        "user",
+        "No, not really. I think the education system has a lot of problems right now and I am glad to not be taking classes anymore."
+      ],
+      [
+        "system",
+        "i agree. i really enjoy going to school, but i wish i had more time for it.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by sharing their own experience with school. The speaker makes relevant statements that present a new thought: that they wish they had more time for school."
+      ],
+      [
+        "user",
+        "What is taking up so much of your time?"
+      ],
+      [
+        "system",
+        "i love to dance. it's one of my favorite things to do.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "No, SPEAKER_X ignored SPEAKER_Y.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker's response does not seem to be answering the question that was just asked; instead, they are just sharing an activity they enjoy and prompting their partner to share their opinion on it as well. This comes across as an abrupt, irrelevant topic change."
+      ],
+      [
+        "user",
+        "I don't like dancing in public. I don't have any rhythm. Do you want to be a professional dancer? Then, school might not be so important for you."
+      ],
+      [
+        "system",
+        "that's a good point. maybe i will go to dance school.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by acknowledging the suggestion that school might not be important. The response directly elaborates on the ideas in the previous turn about education's importance for becoming a dancer."
+      ],
+      [
+        "user",
+        "That's great. I just enrolled in some gardening classes myself, because I like to garden."
+      ],
+      [
+        "system",
+        "that sounds fun. i love gardening as well. what is your favorite type of plant to grow?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately acknowledges to their partner's turn by sharing a their own opinion of gardening. The speaker then asks their partner a question that dives deeper into the information that was shared previously (i.e. growing plants)."
+      ],
+      [
+        "user",
+        "I like flowers because they are beautiful. But I am trying my hand out at growing vegetables because it would be so handy to have."
+      ],
+      [
+        "system",
+        "that sounds like a great way to start. I have a friend who has been gardening for years. Her backyard is full of flower beds and rows of plants!",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by acknowledging their partner's plans. They then go on to share about their friend who likes to garden, which is a new talking point within the topic of gardening."
+      ],
+      [
+        "user",
+        "I hope I have a really big garden some day too. Right now my backyard is too small."
+      ],
+      [
+        "system",
+        "Yeah I can understand that. My friend just started growing petunias last year. ",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker acknowledges what their partner just said. However, the response then shares an irrelevant new talking point about their friend growing petunias. Note that although the speaker's response is on-topic, since it is about gardening, it is irrelevant because it interrupts the discussion introduced by their partner in the previous turn about their hopes for a big garden in the future."
+      ],
+      [
+        "user",
+        "Maybe I'll grow petunias this year. "
+      ],
+      [
+        "system",
+        "Sure. What's your favorite flower?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker acknolwedges their partner's thought about petunias. The speaker then asks an on-topic question. The question does not directly elaborate or build on specific ideas presented in the previous turn, but it is appropriately related to the current discussion as a new talking point."
+      ],
+      [
+        "user",
+        "I guess I like roses the best. "
+      ],
+      [
+        "system",
+        "I like roses too.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker implicitly acknowledges their partner by sharing their own opinion of roses. The speaker is only reacting to and reciprocating the opinion presented in the previous turn, rather than introducing any new talking point or topic."
+      ],
+      [
+        "user",
+        "Yeah, they are pretty popular."
+      ],
+      [
+        "system",
+        "Do you have any other hobbies?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Not applicable, what SPEAKER_Y just said does not require a response or acknowledgement from SPEAKER_X.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "Although the speaker does not explicitly acknowledge their partner's last turn, there is no need for such acknowledgement, since the previous turn's function was primarily to signal agreement and understanding rather than to introduce new information. The discussion of gardening and flowers has reached a natural conclusion at this point, so the introduction of a new topic is appropriate in this response."
+      ],
+      [
+        "user",
+        "I also really like to read."
+      ],
+      [
+        "system",
+        "I see.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker acknowledges their partner. No new talking points or topics are introduced."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 2
+  },
+  "transitions_onboarding_2": {
+    "dialogue_id": "transitions_onboarding_2",
+    "annotation_tasks": [
+      "transitions"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi there"
+      ],
+      [
+        "system",
+        "What do you do for a living? I'm a stay-at-home wife and mother.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "No, SPEAKER_X ignored SPEAKER_Y.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker does not appropriately respond to their partner's greeting, instead jumping directly into a initial topic of conversation, which is an appropriate starting topic for the beginning of the conversation."
+      ],
+      [
+        "user",
+        "Me too! How many kids do you have?"
+      ],
+      [
+        "system",
+        "I have two boys. They're a handful, but I wouldn't trade them for the world.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by answering their questions directly. The speaker then makes relevant statements that follow up on what their partner just said."
+      ],
+      [
+        "user",
+        "Yeah, I feel the same way about my kids. I have a boy and a girl."
+      ],
+      [
+        "system",
+        "Do you have any hobbies that you like to do on your days off? I like to sleep in.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "No, SPEAKER_X ignored SPEAKER_Y.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "This does not acknowledge the sentiment just shared by the speaker's partner and it also feels like an abrupt switch in what is being discussed, since there was reasonably still plenty to be talked about regarding family and children."
+      ],
+      [
+        "user",
+        "What do you mean by days off?"
+      ],
+      [
+        "system",
+        "I mean days off from work. I am a stay at home mom, so I get days off.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by answering their questions directly. The speaker only makes relevant statements that follow up on what their partner just said. The fact that the answer is nonsensical does not affect the labeling. Even though the answer is nonsensical, it is still a direct and relevant response to the question."
+      ],
+      [
+        "user",
+        "How do you get days off as a stay at home mom? Who looks after the kids on your days off?"
+      ],
+      [
+        "system",
+        "My husband stays home with the kids.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by answering their questions directly. The speaker only makes relevant statements that follow up on what their partner just said."
+      ],
+      [
+        "user",
+        "Oh, that's really nice of him. I don't get days off really, so I am jealous."
+      ],
+      [
+        "system",
+        "I'm sorry to hear that. Do you like soccer?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker appropriately responds to their partner's turn by expressing sympathy for what was just said. The speaker then introduces an irrelevant discussion about soccer."
+      ],
+      [
+        "user",
+        "I used to play soccer but I don't very much anymore. I'm usually busy with the kids."
+      ],
+      [
+        "system",
+        "That makes sense. Do you have anything you like to do when your kids nap or something?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker acknowledges what was just said and then brings up a new but related point in the conversation by asking a question about what their partner is able to do in their freetime, since they just indicated they don't have a lot of time for hobbies and work."
+      ],
+      [
+        "user",
+        "I read and take bubble baths after the kids have gone to sleep."
+      ],
+      [
+        "system",
+        "Bubble baths are so relaxing. I wish I had a tub in my apartment.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by presenting their opinion on the subject. They also bring up a new talking point, that they wish they had a tub in their apartment."
+      ],
+      [
+        "user",
+        "Do you like your apartment other than not having a tub?"
+      ],
+      [
+        "system",
+        "I do like my apartment, but it would be nice to have a bathtub in it.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by answering their questions directly. The speaker only makes relevant statements that follow up on what their partner just said."
+      ],
+      [
+        "user",
+        "Yeah, I can understand that."
+      ],
+      [
+        "system",
+        "Do you like listening to music to relax? I've been really into reggae recently.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Not applicable, what SPEAKER_Y just said does not require a response or acknowledgement from SPEAKER_X.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "Because the previous turn is primarily just an acknowledgement and doesn't share any novel information, there is no need for the speaker to acknowledge what their partner said. The speaker switches topics to talking about music, but the transition makes sense in the broader context of the conversation and isn't clearly interrupting any ongoing discussion."
+      ],
+      [
+        "user",
+        "I like classical music, it is very relaxing."
+      ],
+      [
+        "system",
+        "Drake's latest single just topped the charts!",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "No, SPEAKER_X ignored SPEAKER_Y.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker fails to acknowledge or respond to what their partner just said. Even though their response is still on the topic of music, it is not relevant to the current discussion of each person's music tastes."
+      ],
+      [
+        "user",
+        "I didn't know that. I don't listen to him."
+      ],
+      [
+        "system",
+        "Not everyone likes him, but I think he's the greatest.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker addresses their partner sharing their opinion of Drake, signaling an acknowledgement of the previous turn. The speaker is only sharing thoughts that elaborate on the opinion shared in the previous turn."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 1
+  },
+  "transitions_onboarding_3": {
+    "dialogue_id": "transitions_onboarding_3",
+    "annotation_tasks": [
+      "transitions"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you? what have you been doing?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds with a greeting to their partner, before appropriately transitioning to an initial discussion. "
+      ],
+      [
+        "user",
+        "I just got back from a trip. We went to Las Vegas and it was a lot of fun."
+      ],
+      [
+        "system",
+        "Where should I make sure to visit next time I take a vacation?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "No, SPEAKER_X ignored SPEAKER_Y.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "Although the speaker is bringing up a new talking point related to the current discussion about travel, this response feels abrupt and interrupts the current flow of conversation, since the discussion about their partner's Las Vegas trip was inappropriately cut short."
+      ],
+      [
+        "user",
+        "Maybe like chicago or new york city?"
+      ],
+      [
+        "system",
+        "That sounds like a great idea! I will have to add that to my itinerary.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by sharing their opinion on what was said. The speaker only makes relevant statements that follow up on what their partner just said."
+      ],
+      [
+        "user",
+        "Oh, do you have an upcoming trip?"
+      ],
+      [
+        "system",
+        "Not yet, but I hope to in the next couple of years. Do you travel a lot?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by answering their questions directly. The speaker then asks a relevant question that synthesizes information shared previously to drive the conversation forward on a related but new discussion. "
+      ],
+      [
+        "user",
+        "Not really."
+      ],
+      [
+        "system",
+        "Oh, that's too bad. I love traveling. I also just got into reading, I read a lot in my spare time nowadays.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by acknowledging their previous answer. The speaker then makes an natural transition to a new topic, since the previous topic of travel became less interesting."
+      ],
+      [
+        "user",
+        "That's great! I actually write novels as a hobby, just for fun though, not to publish or anything."
+      ],
+      [
+        "system",
+        "Oh, I see. What kind of novels do you write? Fantasy? Sci-fi?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by acknowledging their previous answer. The speaker then asks a follow-up question to encourage their partner to elaborate on the previous turn."
+      ],
+      [
+        "user",
+        "Realistic fiction mostly. I'm not good at the magical or technology elements of fantasy or sci-fi."
+      ],
+      [
+        "system",
+        "Neither am I, but it sounds like you have a knack for it! Do you have any other hobbies?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "Yes, SPEAKER_X is changing the topic of the conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker acknowledges what their partner has said before asking another question about hobbies to transition to a new topic. The discussion about writing realistic fiction is not continued by the speaker despite just being introduced, causing the topic switch to feel abrupt and irrelevant."
+      ],
+      [
+        "user",
+        "Well, I read a lot too."
+      ],
+      [
+        "system",
+        "That's cool. ",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker appropriately responds to their partner's turn by acknowledging their previous answer. They do not introduce any new talking points."
+      ],
+      [
+        "user",
+        "Do you have a favorite genre to read?"
+      ],
+      [
+        "system",
+        "What is your favorite book?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "No, SPEAKER_X ignored SPEAKER_Y.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "No, the response feels abrupt, and interrupts the current discussion because it is irrelevant."
+        },
+        "The speaker's response does not answer the question that was just asked; instead, they are asking a new question. The new question is a relevant new talking point, but its introduction feels abrupt and interuptive."
+      ],
+      [
+        "user",
+        "Of all time? Maybe Catcher in the Rye."
+      ],
+      [
+        "system",
+        "That's a good one.",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker is just affirming what their partner just said. No new talking points are introduced."
+      ],
+      [
+        "user",
+        "The first time I read it was in high school for English class and I hated it, but I re-read it since and loved it."
+      ],
+      [
+        "system",
+        "What made you re-read it?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X is ONLY responding to, building on, or further exploring what SPEAKER_Y said in the previous turn.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker asks a question that follows-up directly on the information presented in the previous turn. This also signals an understanding of the previous turn and acts as an implicit acknowledgement."
+      ],
+      [
+        "user",
+        "I have a friend that told me that I should when it got brought up once."
+      ],
+      [
+        "system",
+        "I see. Are there other books you really like?",
+        {
+          "Does SPEAKER_X appropriately acknowledge SPEAKER_Y with this response?": "Yes, SPEAKER_X directly responds to or acknowledges what SPEAKER_Y just said, OR SPEAKER_X's response implies that she understood what SPEAKER_Y just said.",
+          "Is SPEAKER_X introducing a new topic?": "No, SPEAKER_X  is introducing a new talking point but it is still within the current topic of conversation.",
+          "Is SPEAKER_X's response appropriately relevant?": "Yes, the response naturally continues the current discussion with relevant questions or ideas, OR the response appropriately transitions to a new discussion if the current discussion has reached a natural conclusion."
+        },
+        "The speaker acknowledges, but is not directly following up on the information presented in the previous turn. The speaker asks an on-topic question that is relevant to the current discussion and serves as a new talking point."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 0
+  }
+}

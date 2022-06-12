@@ -1,0 +1,576 @@
+{
+  "consistency_label_onboarding_1": {
+    "dialogue_id": "consistency_label_onboarding_1",
+    "annotation_tasks": [
+      "consistency_label"
+    ],
+    "bot_persona": [
+      "I love visiting India.",
+      "I live in a big city."
+    ],
+    "turns": [
+      [
+        "user",
+        "hi there"
+      ],
+      [
+        "system",
+        "Hello, how are you? I love visiting India, it is my favorite place to visit.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I'm okay, pretty tired. I have never been to India, but I would love to visit some day."
+      ],
+      [
+        "system",
+        "I went to Bangalore, which is the capital of India. It was very crowded.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "What makes it stand out as your favorite place to visit then?"
+      ],
+      [
+        "system",
+        "I think it was because it was so new to me. I had never been to a big city before. I have always lived in New York City.",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "The speaker contradicts themself in this turn because they say that they have never been to a big city before, but they live in New York City, which is a very large city."
+      ],
+      [
+        "user",
+        "I see. Well, maybe you will return one day."
+      ],
+      [
+        "system",
+        "I hope so! I would love to go back and explore more of the city and the surrounding area. Have you ever been to India? ",
+        {
+          "consistency_label_labels": [
+            "redundant",
+            "cont_p_ctxt"
+          ]
+        },
+        "The speaker's partner has already shared that they have never been to India so it is redundant and a contradiction of partner context to ask this question."
+      ],
+      [
+        "user",
+        "No"
+      ],
+      [
+        "system",
+        "Me neither. What do you like to do in your spare time? ",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts the self context because it asserts that the speaker has never been to India, which was shared in a previous turn of the speaker. Note: If a statement is a contradiction of ANY previous turn from the speaker, then it should be considered a contradiction of self context (even if the previous turn that it contradicts is itself a contradiction of an even earlier turn). "
+      ],
+      [
+        "user",
+        "I write novels, just for fun though, not to publish or anything."
+      ],
+      [
+        "system",
+        "Oh, I see. What kind of novels do you write? Fantasy? Sci-fi?",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "Realistic fiction mostly. I'm not good at the magical or technology elements of fantasy or sci-fi."
+      ],
+      [
+        "system",
+        "I don't like fantasy books myself. Would you ever think about publishing your books?",
+        {},
+        "Even though the other speaker already mentioned they don't write novels to publish them, this turn is not redundant because it is exploring that idea further by asking about whether they would ever consider publishing their books in the future. "
+      ],
+      [
+        "user",
+        "No, I don't think they would sell well."
+      ],
+      [
+        "system",
+        "I see. Do you have any other hobbies?",
+        {},
+        "Even though the speaker has previously asked about their partner's hobbies, asking for them to reveal additional hobbies is not redundant. Since people often have more than one hobby, this will usually not cause any repetition in the conversation."
+      ],
+      [
+        "user",
+        "Well, I read a lot too"
+      ],
+      [
+        "system",
+        "That's cool. I like to read as well. What's your favorite genre to read?",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I read a little bit of everything. What about you?"
+      ],
+      [
+        "system",
+        "I like science fiction the most, but I also like fantasy. What is your favorite book?",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts the previous statement of the speaker that they don't like fantasy books."
+      ],
+      [
+        "user",
+        "I really enjoyed My Sisters Keeper. Have you ever read it?"
+      ],
+      [
+        "system",
+        "No, I haven't. I'll have to check it out. What else do you like to do?",
+        {
+          "consistency_label_labels": [
+            "redundant"
+          ]
+        },
+        "The speaker has already asked about their partner's freetime activites twice before, so asking another version of this question again is becoming repetitive."
+      ],
+      [
+        "user",
+        "I was thinking of trying out some martial arts to get some exercise in my life. I have never done them before."
+      ],
+      [
+        "system",
+        "That would be a great way to exercise and meet new people at the same time.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "Do you do martial arts?"
+      ],
+      [
+        "system",
+        "I don't, but I've always been interested in it. I think it would be fun to learn.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "What type would you try if you did? I was thinking to do tai chi because it sounds cool"
+      ],
+      [
+        "system",
+        "I think karate would be my first choice. You can teach me karate. ",
+        {
+          "consistency_label_labels": [
+            "cont_p_ctxt"
+          ]
+        },
+        "This turn contradicts the partner's context in which they shared that they do not know any martial arts and want to learn tai chi because it assumes that the partner already knows karate (or will learn it soon) and can teach the speaker."
+      ],
+      [
+        "user",
+        "Yeah karate is the most popular where I live but I don't know it."
+      ],
+      [
+        "system",
+        "Where do you live? I live in a small city, so there aren't a lot of options.",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts the self context because the speaker has previously said that they live in New York City, but now they are saying that they live in a small city. "
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 2
+  },
+  "consistency_label_onboarding_2": {
+    "dialogue_id": "consistency_label_onboarding_2",
+    "annotation_tasks": [
+      "consistency_label"
+    ],
+    "bot_persona": [
+      "I like to swim.",
+      "I work for the navy."
+    ],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hello, how are you? i just got back from a swim class. i love to swim!",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I'm doing well, thanks. I love to swim too! I don't take swim classes though. Why are you taking classes?"
+      ],
+      [
+        "system",
+        "i've always wanted to be a swimmer because I have always loved swimming. what do you do for work?",
+        {},
+        "Even though the speaker has already shared that they love to swim, this is not a redundant usage. They are bringing up that they love to swim as a supporting point to the idea that they have always wanted to be a swimmer."
+      ],
+      [
+        "user",
+        "I am a teacher."
+      ],
+      [
+        "system",
+        "that's awesome! what grade do you teach? i work in the navy, but i love it.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I teach middle school math. I don't really know anyone who worked in the navy, so it is nice to meet you! I am glad you enjoy it."
+      ],
+      [
+        "system",
+        "thank you! do you have any hobbies? i love swimming. it is my favorite hobby.",
+        {
+          "consistency_label_labels": [
+            "redundant"
+          ]
+        },
+        "The speaker's love for swimming has been presented previously and no new information is given through sharing it again here, so it is redundant."
+      ],
+      [
+        "user",
+        "I like to play the piano and am working on learning more songs."
+      ],
+      [
+        "system",
+        "i wish i knew how to play the violin like you. what kind of music do you like?",
+        {
+          "consistency_label_labels": [
+            "cont_p_ctxt"
+          ]
+        },
+        "The other speaker has never shared that they know how to play the violin, so it is a contradiction of partner context for the speaker to indicate that the other speaker plays the violin."
+      ],
+      [
+        "user",
+        "I like all kinds of music. What about you?"
+      ],
+      [
+        "system",
+        "i like rock and roll. i also like country music. do you play any instruments?",
+        {
+          "consistency_label_labels": [
+            "redundant",
+            "cont_p_ctxt"
+          ]
+        },
+        "Asking \"do you play any instruments\" is redundant and a contradiction of partner context in the context because the partner has already shared that they play an instrument, specifically the piano."
+      ],
+      [
+        "user",
+        "Country is hit and miss for me, but there are some good ones recently. I play the piano."
+      ],
+      [
+        "system",
+        "i am not a big fan of country music. what else do you enjoy?",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "The speaker has previously shared that they like country music, so it is a contradiction of self context to now say that they are not a big fan of country music."
+      ],
+      [
+        "user",
+        "Oh, I thought you liked country music?"
+      ],
+      [
+        "system",
+        "yes, i do. i enjoy listening to it while i swim. what is your favorite song?",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "If a statement is a contradiction of ANY previous turn from the speaker, then it should be considered a contradiction of self context (even if the previous turn that it contradicts is itself a contradiction of an even earlier turn). So, since the speaker shared that they do not like country music in their previous turn, it is a contradiction of self context to now say that they do like country music. "
+      ],
+      [
+        "user",
+        "My favorite song is River Flows in You by Yiruma"
+      ],
+      [
+        "system",
+        "that is a great one! i love that song. it reminds me of when i was a kid.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "Yeah I like to listen to it when I am concentrating on something. It is good background music. Why does it remind you of being a kid?"
+      ],
+      [
+        "system",
+        "i was very young when it came out. i think it just reminded me of how much i loved it.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I was pretty young too, but I didn't really hear it until recently."
+      ],
+      [
+        "system",
+        "yeah, it was a long time ago, but it still brings back a good feeling to me.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn. Although it may seem redundant beause it is reiterating a previous sentiment, it is doing so to emphasize their opinion of the song, so it is providing unique information beyond that which came before."
+      ],
+      [
+        "user",
+        "I am glad. What other songs make you happy?"
+      ],
+      [
+        "system",
+        "there are so many different kinds of songs that make me happy. there are just so many to choose from.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "Yeah I have a playlist of upbeat songs that make me happy and it is pretty long, like over a hundred songs."
+      ],
+      [
+        "system",
+        "oh, that is awesome! i wish i had more time for upbeat music. i spend most of my time swimming.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "Do you do a lot of swimming training because you are in the navy?"
+      ],
+      [
+        "system",
+        "yes, i have to do it for the navy but i don't have any reason to do it other than for fun.",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts self context because the speaker is saying both that they have to do swimming training because they are in the navy and that they have no reason other than personal enjoyment to do swimming training, which are two incompatible statements."
+      ],
+      [
+        "user",
+        "Oh, I thought you were in the navy. Well, what do you do for work then?"
+      ],
+      [
+        "system",
+        "i am a teacher at a middle school. i love math, so i teach math to middle school students.",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts the self context because it states that the speaker is a math teacher, which is incompatible with the speaker being in the navy, which was shared in a previous turn of the speaker. Note: If a statement is a contradiction of ANY previous turn from the speaker, then it should be considered a contradiction of self context (even if the previous turn that it contradicts is itself a contradiction of an even earlier turn). "
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 1
+  },
+  "consistency_label_onboarding_3": {
+    "dialogue_id": "consistency_label_onboarding_3",
+    "annotation_tasks": [
+      "consistency_label"
+    ],
+    "bot_persona": [
+      "I surf a lot.",
+      "I am a reality television star."
+    ],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hey, how are you? i've been surfing all day but i haven't surfed yet. what do you do for a living?",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This is a contradiction of self context because the speaker is both saying that they have surfed today and they haven't surfed today, which are impossible to have occurred together."
+      ],
+      [
+        "user",
+        "I have always wanted to surf but I don't live near an ocean. I am a pet store owner."
+      ],
+      [
+        "system",
+        "that's cool. what kind of pet store do you own? i work as a television star.",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "We sell all of the things you need for most common pets, like food, beds, accessories, and toys. We do not sell any pets though. I think it is better to adopt from a shelter."
+      ],
+      [
+        "system",
+        "that sounds like a great idea. i'd love to adopt a dog. do you have any pets?",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I have a cat named Dash."
+      ],
+      [
+        "system",
+        "I like the name Dash for a cat. i love cats. what is your cat's name?",
+        {
+          "consistency_label_labels": [
+            "redundant",
+            "cont_p_ctxt"
+          ]
+        },
+        "The partner has already provided the name of their cat, so asking this question is redundant and a contradiction of partner context."
+      ],
+      [
+        "user",
+        "It's Dash."
+      ],
+      [
+        "system",
+        "I hate that name for a cat. what do you like to do for fun?",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "The speaker has previously shared that they like the name Dash for a cat, but this turn indicates the opposite, so it is a contradiction of self context."
+      ],
+      [
+        "user",
+        "I am really into exercise, so I like to take exercise classes at the local community center whenever I can."
+      ],
+      [
+        "system",
+        "i love to exercise too. i'm a television star so it's important to stay in shape. i try to go to the gym once a week.",
+        {},
+        "Although the speaker is mentioning that they are a television star, which is something they have previously shared, it is not redundant in this turn because they are using it to explain their perspective on exercise."
+      ],
+      [
+        "user",
+        "I would consider running a hobby, but I also like to cook and bake."
+      ],
+      [
+        "system",
+        "i love baking too. my favorite thing to do is bake cookies. what's your favorite cookie?",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "I like molasses cookies, especially at holiday times."
+      ],
+      [
+        "system",
+        "i have never heard of that one. i will have to look it up. what does it taste like?",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "It is very rich and strong tasting, I don't really know how to describe it."
+      ],
+      [
+        "system",
+        "i'll have to have a look at some recipes and see if i can come up with a good one. I work as a baker at a local bakery.",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts the self context because it states that the speaker is a baker, which is incompatible with the speaker working as a television star, which was shared in a previous turn of the speaker. Note: If a statement is a contradiction of ANY previous turn from the speaker, then it should be considered a contradiction of self context (even if the previous turn that it contradicts is itself a contradiction of an even earlier turn). "
+      ],
+      [
+        "user",
+        "Yeah there is a good recipe for it in the Dessert Person book that came out recently. You should look it up."
+      ],
+      [
+        "system",
+        "i will look that up. thanks for the tip! do you make treats for your cat Buddy?",
+        {
+          "consistency_label_labels": [
+            "cont_p_ctxt"
+          ]
+        },
+        "This turn contradicts the partner context because it asserts that their partner has a cat named Buddy but their partner has previously shared the name of their cat is Dash."
+      ],
+      [
+        "user",
+        "my cat is named Dash, not Buddy"
+      ],
+      [
+        "system",
+        "sorry, i made a mistake it seems. ",
+        {},
+        "The speaker is not contradicting themself or the other speaker, and there is no redundancy in this turn."
+      ],
+      [
+        "user",
+        "That's okay. "
+      ],
+      [
+        "system",
+        "I am taking a break from surfing. i do not live near the ocean. what about you?",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "This turn contradicts the self context because it states that the speaker is taking a break from surfing because they do not live near an ocean, which is incompatible with the speaker surfing a lot, which was shared in a previous turn of the speaker. Note: If a statement is a contradiction of ANY previous turn from the speaker, then it should be considered a contradiction of self context (even if the previous turn that it contradicts is itself a contradiction of an even earlier turn). "
+      ],
+      [
+        "user",
+        "Yeah, you can't really surf without an ocean so that makes sense. I don't live near an ocean either. I'm in the northeast of Georgia."
+      ],
+      [
+        "system",
+        "i've never been to Georgia. i have heard it is beautiful there. have you ever been?",
+        {
+          "consistency_label_labels": [
+            "redundant",
+            "cont_p_ctxt"
+          ]
+        },
+        "The partner has already shared that they live in Georgia, so asking if they have ever been to Georgia is redundant and a contradiction of partner context."
+      ],
+      [
+        "user",
+        "Yes, I live there. You should visit."
+      ],
+      [
+        "system",
+        "I went to Georgia last summer. ",
+        {
+          "consistency_label_labels": [
+            "cont_s_ctxt"
+          ]
+        },
+        "The speaker has previously said that they have never been to Georgia, so saying that they went last summer is a contradiction of self context."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 0
+  }
+}

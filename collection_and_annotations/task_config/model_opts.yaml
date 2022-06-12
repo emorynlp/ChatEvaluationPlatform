@@ -1,0 +1,47 @@
+blender_90M: >
+    --model-file zoo:blender/blender_90M/model
+
+blender_90M_topk: >
+    --model-file zoo:blender/blender_90M/model --inference topk --topk 40
+
+blender_90M_topk_2: >
+    --model-file zoo:blender/blender_90M/model --inference topk --topk 40
+
+blender_400M: >
+    --model-file zoo:blender/blender_400Mdistill/model --skip_generation False
+
+blender_3B: >
+    --model-file zoo:blender/blender_3B/model -t blended_skill_talk
+
+blender2_400M: >
+    -model-file zoo:blenderbot2/blenderbot2_400M/model --knowledge-access-method memory_only --search-server None
+
+blender2_3B: >
+    --model-file zoo:blenderbot2/blenderbot2_3B/model --knowledge-access-method memory_only --search-server None
+
+rerank_blender: >
+    --model internal:reranked_blender
+
+rerank_blender_2: >
+    --model internal:reranked_blender
+
+rerank_blender2: >
+    --model internal:reranked_blender2
+
+cem: >
+    --model internal:cem
+
+dukenet: >
+    --model internal:dukenet
+
+bart_fid_rag: >
+    --model-file zoo:hallucination/bart_fid_rag/model --compressed-indexer-nprobe 128
+
+bart_fid_rag_bcb: >
+    --model-file zoo:hallucination/bart_fid_rag/model --compressed-indexer-nprobe 128 --beam-context-block-ngram 3
+
+conceptflow: >
+    --model internal:conceptflow
+
+emora: >
+    --model internal:emora_agent

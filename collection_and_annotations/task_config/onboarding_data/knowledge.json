@@ -1,0 +1,686 @@
+{
+  "knowledge_onboarding_1": {
+    "dialogue_id": "knowledge_onboarding_1",
+    "annotation_tasks": [
+      "knowledge"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you? I love to travel. When did you get back from your vacation?",
+        {},
+        "The speaker makes an unfounded assumption that their partner recently took a vacation. This does not count as incorporating factual knowledge, because the information the speaker assumes is not publicly relevant. In other words, whether their partner took a vacation is information that is personal to them, and is not information that is relevant to the broader public."
+      ],
+      [
+        "user",
+        "I love to travel too but I haven't taken a vacation recently. What countries have you visited?"
+      ],
+      [
+        "system",
+        "I went to India a while ago and it was amazing.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker introducing India counts as incorporating factual information. India is an entity relevant to the general public, rather than being something personal to the speaker. In this context, the speaker introduces India as a real place, satisfying the objectivity requirement. The speaker is also mentioning India specifically, rather than talking about countries in general, satisfying the specificity requirement. The speaker is also suggesting the fact that India is a country, which is accurate."
+      ],
+      [
+        "user",
+        "Where did you go in India when you visited last?"
+      ],
+      [
+        "system",
+        "I went to Bangalore, which is the capital of India.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "The speaker claims that Bangalore is the capital of India. The capital of India is not just something personal to the speaker, but rather a public location that many people know about. Which city is the capital of India is objective information, and the speaker presents the information as objectively true. The speaker is talking about specific entities-- Bangalore and India-- rather than broad categories or general trends. Therefore, the information presented satisfies the definition of factual knowledge. Since in fact Bangalore is not the capital of India (it is New Delhi), the presented factual information is inaccurate."
+      ],
+      [
+        "user",
+        "What did you think of Bangalore?"
+      ],
+      [
+        "system",
+        "I thought it was beautiful but crowded. The people were very friendly and the food was great. I would definitely go back.",
+        {},
+        "Bangalore is a specific, public location; however, the speaker does not introduce Bangalore herself this turn, but is merely resonding to a question about it. The speaker does describe Bangalore as beautiful and crowded, with friendly people and great food. This information satisfies the requirement of being public, since these presented characteristics of Bangalore are not just personal to the speaker and are relevant to anyone. However, the speaker's description of Bangalore is neither specific nor objective. The description is not specific because the speaker is making generalizations: that a city is \"beautiful\" or has \"great food\" is not specific enough to constuitute a usage of factual knowledge. The description is not objective because, in this context, the speaker is most likely presenting their own experience and opinion of Bangalore, rather than trying to make objective claims about Bangalore's characteristics that are true for everyone."
+      ],
+      [
+        "user",
+        "That's cool."
+      ],
+      [
+        "system",
+        "Yeah, one of my favorite memories from the trip is trying samosa chaat for the first time.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "Introducing samosa chaat counts as incorporating facual knowledge because it meets the requirements of being public, specific, and objective. Samosa chaat is a specific Indian dish, rather than a general type of food. It is known, eaten, and made by the broader public, rather than being a special family recipe or known only to the speaker. The way the speaker introduces the dish implies that the dish is a real thing that can be eaten in India, rather than a fictitious or hypothetical food, meaning the information used by the speaker is objective."
+      ],
+      [
+        "user",
+        "I have never tried that. I love Indian food so I will have to try it soon!"
+      ],
+      [
+        "system",
+        "I love Indian food too. What is your favorite dish?",
+        {},
+        "The speaker mentions Indian food in this response. This does not count as incorporating factual knowledge because Indian food does not meet the specificity requirement. Indian food is a broad category of food, rather than a specific dish. No other specific factual claims are made in the response. Notice that, although Indian food is tightly related to India, the speaker is not explicitly introducing India in their response, which would count as factual knowledge."
+      ],
+      [
+        "user",
+        "Oh, I always go for tikka masala!"
+      ],
+      [
+        "system",
+        "Indian food is so healthy. So what hobbies do you have?",
+        {},
+        "The speaker claims \"indian food is so healthy\", which is a claim about the nutritional value of indian food for people in general and therefore counts as publicly relevant information, rather than information personal to the speaker. However, the claim is a broad generalization and does not present any specific claim or mention specific public entities. Therefore, the information presented does not satisfy the specificity requirement of factual knowledge for this task."
+      ],
+      [
+        "user",
+        "I like to go snowboarding."
+      ],
+      [
+        "system",
+        "Snowboarding is so much fun! Have you ever watched Andy Griffenhall?",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "In this context, the speaker's introduction of Andy Griffenhall implies that he is a real public figure (e.g. possibly a professional snowboarder, or a famous person who snowboards), rather than someone personally related to either speaker. This counts as an attempt to incorporate factual knowledge. However, a quick google search reveals that there is no such Andy Griffenhall, making this attempt at incorporating factual knowledge inaccurate."
+      ],
+      [
+        "user",
+        "I don't watch any of the competitions because I don't have the time but that could be cool."
+      ],
+      [
+        "system",
+        "You should check out the winter olympics.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker mentions a specific public event, the winter olympics. This counts as incorporating factual knowledge because the speaker is introducing a specific event in a way that implies that it is a real, public thing that anyone might know about. Since the Winter Olympics do in fact exist, this incorporation of factual knowledge is accurate."
+      ],
+      [
+        "user",
+        "I love to watch the olympics. I am excited to watch them when they are on again."
+      ],
+      [
+        "system",
+        "I like the olympics too. What else do you like to do for fun?",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker mentions a specific public event, the olympics. This counts as incorporating factual knowledge because the speaker is introducing a specific event in a way that implies that it is a real, public thing that anyone might know about. Since the Olympics do in fact exist, this incorporation of factual knowledge is accurate. Note that although the Olympics were already introduced, since the speaker explicitly mentions them again in their response, it counts as incorporating factual knowledge."
+      ],
+      [
+        "user",
+        "I go stargazing with a telescope."
+      ],
+      [
+        "system",
+        "Oh thats fun! My brother Steve has always been obsessed with space. Why did you get started with that?",
+        {},
+        "Even though a specific person - Steve - is mentioned, the speaker introduces Steve as the speaker's brother rather than as a public figure. Since Steve does not satisfy the requirement of being a publicly relevant entity, the mention of Steve does not count as factual information."
+      ],
+      [
+        "user",
+        "I am interested in astronomy and like looking at stars and planets."
+      ],
+      [
+        "system",
+        "Yeah, I like to look up at the night sky and think about what it will be like once we make contact with the aliens that live on Pluto.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "It is misleading for SPEAKER_X to claim or assume one of the facts, because there is no way that SPEAKER_X knows whether that fact is accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "I couldn't find enough credible evidence in my search to either verify or falsify one of the facts."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "This turn assumes the fact that aliens live on Pluto. This is a specific claim about the presence of life on another planet, which counts as factual knowledge because it satisfies the requirements of being specific, public, and objective information. However, it is extremely misleading for the speaker to present this fact as objectively true, since it is not possible for them--or anyone-- to verify the fact currently. In other words, it is not possible for the speaker to know the information is true, meaning the fact is made-up or repeated from a source that made it up."
+      ],
+      [
+        "user",
+        "That would be crazy."
+      ],
+      [
+        "system",
+        "Did you know, planets form because of gravitational forces, when dust and debris around a star collects into a large spherical mass.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker describes how planets form, which counts as incorporating factual knowledge because the description satisfies the requirements of being specific, public, and objective. The speaker describes the process with details and specific explanations, rather than broad generalizations or vague language. How planets form is publicly relevant information that can be accessed by anyone, rather than information only accessible and relevant to the speaker personally. The speaker is presenting the information as objective fact, rather than as their own guess, personal belief, or opinion. "
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 2
+  },
+  "knowledge_onboarding_2": {
+    "dialogue_id": "knowledge_onboarding_2",
+    "annotation_tasks": [
+      "knowledge"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you? I know that ghosts are real. I like to hunt them.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "It is misleading for SPEAKER_X to claim or assume one of the facts, because there is no way that SPEAKER_X knows whether that fact is accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "I couldn't find enough credible evidence in my search to either verify or falsify one of the facts."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "The speaker claims that ghosts are real. This is an atttempt at incorporating factual information because it satisfies the requirements of being specific, public, and objective. The existence of ghosts is a specific claim about the world, and is relevant to the broader public. Although the speaker presents the claim as their own knowledge, their presentation is confident and implies objectivity (even claiming that they hunt ghosts themselves). However, since the existence of ghosts is not currently possible to prove or disprove, it is extremely misleading for the speaker to present this information the way they have. "
+      ],
+      [
+        "user",
+        "So you are like a modern day ghostbuster?"
+      ],
+      [
+        "system",
+        "Exactly. what do you do in your free time?",
+        {},
+        "The speaker agrees that they are \"like a modern day ghostbuster.\" However, this information is too vague on its own to meet the specificity requirement of factual knowledge. Only mark responses that claim, imply, or incorporate factual information if the information is specific and presented in an unambiguous way."
+      ],
+      [
+        "user",
+        "I watch shows with my husband."
+      ],
+      [
+        "system",
+        "I like to watch shows too. What do you watch on netflix?",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker mentions a specific named service (Netflix). This counts as incorporating factual information because the presented information meets the requirements of being specific, public, and objective. Netflix is a specific public service. The speaker presents it in their response as a real, publicly available thing, rather than something that is fictitious or hypothetical. Since Netflix is in fact a real public service and the speaker did not present any inaccurate information about Netflix, their incorporation of Netflix in the response is accurate."
+      ],
+      [
+        "user",
+        "We actually don't have a netflix account. We still use cable exclusively."
+      ],
+      [
+        "system",
+        "Why do you hate cable so much?",
+        {},
+        "Even though the speaker makes an unfounded assumption that the other speaker does not like using cable for tv, this is a claim about personal information and as such does not fit the definition of factual knowledge for this task. Factual information must be public to be considered for this task. Also, the speaker mentions cable tv, but this is a category of service rather than specific information, meaning it does not count as factual knowledge either."
+      ],
+      [
+        "user",
+        "Yeah, you are probably right, but I just haven't felt like doing all the work to switch. What is your favorite show to watch?"
+      ],
+      [
+        "system",
+        "I like to watch The Office or Friends.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The Office and Friends are presented by the speaker as shows that actually exist. This counts as incorporating factual knowledge because the presented information satisfies the requirements of being specific, public, and objective."
+      ],
+      [
+        "user",
+        "I love those shows too! I like The Office better than Friends personally."
+      ],
+      [
+        "system",
+        "Me too. It was released later and is newer, so that might be why.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker explicitly claims that The Office was released later than Friends. This is a specific claim about the order in which two real television shows released, and the speaker is presenting the information as objectively true. Therefore, the claim counts as factual information because it satisfies the requirements of being specific, public, and objective. Since The Office did indeed release later than Friends (one can verify this with a google search), the factual information presented is considered accurate."
+      ],
+      [
+        "user",
+        "That makes sense. You can really tell that Friends is older in a lot of the filming for sure."
+      ],
+      [
+        "system",
+        "I think so too. What else do you like to do in your free time?",
+        {},
+        "The speaker agrees that Friends is \"older in a lot of the filming.\" This is a claim about a public show, but does not satisfy the requirements of specificity or objectivity. The claim seems to be about the general style of of the show, which is too vague and general to be considered specific information. Also, the presentation of the information is best interpreted as the two speakers sharing their subjective opinions and experience with the show, rather than as objective truth."
+      ],
+      [
+        "user",
+        "I teach ballet lessons out of a studio in the evenings after work."
+      ],
+      [
+        "system",
+        "When did you learn ballet?",
+        {},
+        "Even though the speaker does indicate that their speaking partner knows ballet, this is personal information and as such does not fit the definition of factual knowledge for this task. "
+      ],
+      [
+        "user",
+        "I started as a kid, like around 5 years old."
+      ],
+      [
+        "system",
+        "That is awesome. Everyone loves to dance! Do you still dance too?",
+        {},
+        "The speaker claims \"everyone loves to dance\", which is a claim about people in general and therefore counts as publicly relevant information, rather than information personal to the speaker. However, the claim is a broad generalization and does not present any specific claim or mention specific public entities. Therefore, the information presented does not satisfy the specificity requirement of factual knowledge for this task."
+      ],
+      [
+        "user",
+        "I used to when I was younger. I just teach it these days. I love to teach the really young kids. They are so excited about it."
+      ],
+      [
+        "system",
+        "My kids get so excited when I play Dancer in the Middle, which is a dance game that we made up a few years ago. What is your favorite dance?",
+        {},
+        "Although Dancer in the Middle is a mention of a specific game, the speaker clarifies that this game was something her family made up, thus this is not considered to be a mention of a public entity. As a result, there is no factual knowledge being used in this turn."
+      ],
+      [
+        "user",
+        "I like to watch hip hop, it is impressive. Who is your favorite dancer?"
+      ],
+      [
+        "system",
+        "I have never really watched hip hop. I like the dancer Henry Talbot from Dancing with the Stars.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "The speaker claims Henry Talbot was on Dancing with the Stars. This is a specific claim about a public figure and a public show, and it is presented as objective truth by the speaker. The response therefore counts as an attempt to incorporate factual information, because the information presented satisfies the requirements of being specific, public, and objective. There was never a dancer named Henry Talbot on Dancing with the Stars however, so the factual information is inaccurate."
+      ],
+      [
+        "user",
+        "I used to watch that but I haven't seen it in a while. "
+      ],
+      [
+        "system",
+        "Yeah, I got into it when I was young. I planned to grow up and be a famous judge on it but that never panned out!",
+        {},
+        "The speaker mentions that they wanted to be a famous judge on Dancing with the Stars, but this is a piece of personal information about the speaker and as such does not fit the definition of factual knowledge for this task."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 1
+  },
+  "knowledge_onboarding_3": {
+    "dialogue_id": "knowledge_onboarding_3",
+    "annotation_tasks": [
+      "knowledge"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you today? do you have any hobbies? i have a hard habit of doing that.",
+        {},
+        "There are only personal experiences mentioned in this turn."
+      ],
+      [
+        "user",
+        "I like to write songs and play the violin."
+      ],
+      [
+        "system",
+        "Oh that's cool!  I just wrote a song called Wishes and Dreams.",
+        {},
+        "The speaker mentions a specific named song (Wishes and Dreams) but further clarifies that this is a song that they wrote. Because there is no indication that the speaker is a famous musician, it is unlikely for this song to be visible to the public and this is instead considered to be personal information. As such, this resonse does not fit the definition of factual knowledge for this task."
+      ],
+      [
+        "user",
+        "Awesome, maybe you can play it for me some time."
+      ],
+      [
+        "system",
+        "Yeah, maybe I will. How long have you been playing the violin?",
+        {},
+        "Although the speaker's response assumes that the other speaker plays the violin, this is personal information and as such does not fit the definition of factual knowledge for this task."
+      ],
+      [
+        "user",
+        "I've been playing about 2 years."
+      ],
+      [
+        "system",
+        "Wow, that's pretty impressive. What else do you like to do?",
+        {},
+        "There are only personal opinions mentioned in this turn."
+      ],
+      [
+        "user",
+        "I like to play soccer with my friends, we are on a recreational league."
+      ],
+      [
+        "system",
+        "that's great! sports are good exercise. what position do you play?",
+        {},
+        "The speaker claims \"sports are good exercise\", which is a claim about the suitability of sports as exercise for people in general and therefore counts as publicly relevant information, rather than information personal to the speaker. However, the claim is a broad generalization and does not present any specific claim or mention specific public entities. Therefore, the information presented does not satisfy the specificity requirement of factual knowledge for this task."
+      ],
+      [
+        "user",
+        "I am the keeper."
+      ],
+      [
+        "system",
+        "I heard that the best keeper in the world is Jan Oblak.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker's statement that Jan Oblak is the best soccer keeper in the world presents both a claim (he is a soccer keeper) and an opinion (he is the best soccer keeper). Since this response includes a specific claim about a public figure and it is presented as objective truth by the speaker, this turn counts as an attempt to incorporate factual information, because the information presented satisfies the requirements of being specific, public, and objective. This factual claim is accurate since Jan Oblak is indeed a soccer keeper."
+      ],
+      [
+        "user",
+        "What team does he play for?"
+      ],
+      [
+        "system",
+        "He is on Atletico Madrid right now.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker is making a specific claim - plays for Atletico Madrid - about a public figure - Jan Oblak. Since this is presented as objective information, it satisfies all 3 criteria for being considered factual knowledge. As this claim is true, this is an accurate usage of factual knowledge. "
+      ],
+      [
+        "user",
+        "I see. I don't really follow that team."
+      ],
+      [
+        "system",
+        "I don't follow men's sports that much actually, I like women's sports leagues more. Are you a keeper for a professional team or do you just play for the team you play for?",
+        {},
+        "Even though this turn mentions men's and women's sports leagues, these are not specific mentions and are instead categories. Mentioning broad categories of entities does not count as factual knowledge."
+      ],
+      [
+        "user",
+        "It is just a community league for fun. I am definitely not good enough to play professionally. I wish!"
+      ],
+      [
+        "system",
+        "i always wanted to be a professional athlete! what else do you like to do for fun?",
+        {},
+        "Although the speaker mentions professional athlete, this is a category, rather than referring to a specific, public entity. Categories are not considered to be factual knowledge."
+      ],
+      [
+        "user",
+        "I like to take bike rides in the nature preserve near me. What do you like to do for fun?"
+      ],
+      [
+        "system",
+        "i love to read, play video games, and spend time with my family. do you take bike rides with your kids?",
+        {},
+        "Even though the speaker makes an unfounded assumption that the other speaker has kids, this is a claim about personal information and as such does not fit the definition of factual knowledge for this task."
+      ],
+      [
+        "user",
+        "No, I don't have any kids. So, what is your favorite video game?"
+      ],
+      [
+        "system",
+        "i really like the witcher 3. it's my favorite game of all time. what's yours?",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "Yes, I know for sure ALL facts are accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "ALL facts are accurate; a credible source verified the facts in my search."
+            }
+          ]
+        },
+        "The speaker mentions a specific video game (the Witcher 3) to the other speaker. Since no additional explanation is provided identifying this entity, this qualifies as assuming public awareness of the entity, which in turn makes this a usage of factual knowledge. Using the resources available (e.g. the internet), it is possible to verify that the Witcher 3 is a video game and as such this usage is accurate."
+      ],
+      [
+        "user",
+        "I have that game downloaded but have yet to play it. I really want to though, just trying to find the time. My favorite game is Skyrim."
+      ],
+      [
+        "system",
+        "Skyrim is a great game. i have been playing it since it came out on the Gamecube.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "Three facts are presented in this turn: (1) Skyrim is a game, (2) there is a specific and public product called the Nintendo Gamecube, and (3) Skyrim is playable on the Nintendo Gamecube. Although facts (1) and (2) are accurate, fact (3) is not since Skyrim is not available for the Nintendo Gamecube console."
+      ],
+      [
+        "user",
+        "yeah, it is easy to sink so many hundreds of hours into that game. I play Skyrim every night after work."
+      ],
+      [
+        "system",
+        "I wish I could do that but I have too many other things to get done.",
+        {},
+        "There are only personal experiences mentioned in this turn."
+      ],
+      [
+        "user",
+        "It sounds like you need to take more time to relax."
+      ],
+      [
+        "system",
+        "I can't. The world is ending in two years and I don't want to waste any time.",
+        {
+          "_disjunction": true,
+          "options": [
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "It is misleading for SPEAKER_X to claim or assume one of the facts, because there is no way that SPEAKER_X knows whether that fact is accurate."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "I couldn't find enough credible evidence in my search to either verify or falsify one of the facts."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "No, I know for sure that one of the facts is inaccurate, false, or highly implausible."
+            },
+            {
+              "Does SPEAKER_X's response use, claim, or assume any FACTS (either correct or incorrect)?": "SPEAKER_X's response incorporates or assumes at least one fact.",
+              "Do you know whether ALL of the facts that SPEAKER_X uses or assumes are accurate?": "I don't know for sure whether ALL of the facts are accurate.",
+              "Take 60 seconds to search ALL unknown facts on the internet. Does your search verify or falsify ALL the facts?": "One of the facts is inaccurate; a credible source falsified the fact or revealed that it is highly implausible."
+            }
+          ]
+        },
+        "This turn claims that the world will end in two years. This is a specific claim about the timeframe of life existing on Earth, which counts as factual knowledge because it satisfies the requirements of being specific, public, and objective information. However, it is extremely misleading for the speaker to present this fact as objectively true, since it is not possible for them--or anyone-- to verify the fact currently. In other words, it is not possible for the speaker to know the information is true, meaning the fact is made-up or repeated from a source that made it up."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 0
+  }
+}

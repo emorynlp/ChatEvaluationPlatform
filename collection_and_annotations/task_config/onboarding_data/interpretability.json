@@ -1,0 +1,399 @@
+{
+  "grammar_onboarding_1": {
+    "dialogue_id": "grammar_onboarding_1",
+    "annotation_tasks": [
+      "grammar"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you today? i'm having a hard time keeping up with my life.",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "Oh no, you sound stressed out a bit. What is giving you a hard time?"
+      ],
+      [
+        "system",
+        "i get into a lot of fights, especially when.",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "This response is incomplete, which makes it difficult to understand what is trying to be said."
+      ],
+      [
+        "user",
+        "Fights with people you know, like family or friends?"
+      ],
+      [
+        "system",
+        "mostly friends and family. They are tired of dealing with my anger issues.",
+        {},
+        "Even though the first sentence is not grammatically formed, it is a response to the question in the previous turn and is understandable in that context. "
+      ],
+      [
+        "user",
+        "I hope you can get along better with the people you care about soon."
+      ],
+      [
+        "system",
+        "Thanks, I am working on it. I want to better see control bad. So, what do you like to do?",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The middle sentence in this response is vague and highly ambiguous, making it difficult to tell what the intended meaning was supposed to be, so this response is considered to be uninterpretable."
+      ],
+      [
+        "user",
+        "I play baseball."
+      ],
+      [
+        "system",
+        "do you play professionally or do you just play baseball?",
+        {},
+        "Even though this question is awkwardly formed and the two options are not well-specified, the overall intent of what is being asked (i.e. playing professionally vs recreationally) is understandable."
+      ],
+      [
+        "user",
+        "It is just a community league for fun. I am definitely not good enough to play professionally. Do you play?"
+      ],
+      [
+        "system",
+        "I play. I think it is the GOAT. ",
+        {},
+        "Even though this response seems to be missing information (e.g. play what?), it is provided by the previous question. In addition, GOAT is a slang term for \"Greatest of all time\" and slang should be treated as interpretable."
+      ],
+      [
+        "user",
+        "Do you play any other sports too?"
+      ],
+      [
+        "system",
+        "I play tennis much too.",
+        {},
+        "Although \"much\" is not used in this way, usually replaced by \"often\" or \"a lot\" instead, you can understand the intended meaning of the sentence."
+      ],
+      [
+        "user",
+        "I never got into tennis. I took lessons one summer but I did not find it fun."
+      ],
+      [
+        "system",
+        "That's okay. I took lessons too which weren't fun themselves but I like playing for fun.",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "I don't have any tennis courts near me, so I wouldn't really be able to play even if I wanted to."
+      ],
+      [
+        "system",
+        "There are none close to me but I have tennis courts down the street. What else do you like doing?",
+        {},
+        "This response has a clearly understandable meaning, even though it is a contradiction since tennis courts being down the street from you generally implies that they are close to you. A response being illogical does not make it uninterpretable."
+      ],
+      [
+        "user",
+        "I like to take walks around the park nearest to me. It's right by my dentist and grocery store. What about you?"
+      ],
+      [
+        "system",
+        "I work at a grocery store. What do you do for work?",
+        {},
+        "Even though this response ignores the previous question that was asked, this does not make it uninterpretable."
+      ],
+      [
+        "user",
+        "I am a teacher."
+      ],
+      [
+        "system",
+        "I thought teaching would be a boorky job so I never considered it.",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The phrase \"boorky\" does not exist in the English language, and is not close enough to an existing phrase to be interpretable in the context."
+      ]
+    ],
+    "pass_criteria": 1,
+    "remaining": 2
+  },
+  "grammar_onboarding_2": {
+    "dialogue_id": "grammar_onboarding_2",
+    "annotation_tasks": [
+      "grammar"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hey, how are you? i've been surfing all day.",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "I have always wanted to surf but I don't live near an ocean. "
+      ],
+      [
+        "system",
+        "I surf all the time. I used to when it was on it but not anymore.",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The second sentence of the response is too vague and uninformative to convey a clear meaning."
+      ],
+      [
+        "user",
+        "awesome. What do you do for work?"
+      ],
+      [
+        "system",
+        "I work as a reality television star.",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "what shows have you been in?"
+      ],
+      [
+        "system",
+        "I was a part of Wilderness Trekking for Noobs",
+        {},
+        "It is easy to understand what the speaker was sharing in this response, even if its factual accuracy is questionable since \"Wilderness Trekking for Noobs\" is not a real show according to the Internet. In addition, \"noob\" is a slang term for an inexperienced person and slang should be treated as interpretable."
+      ],
+      [
+        "user",
+        "Oh that sounds hard. What was it like?"
+      ],
+      [
+        "system",
+        "Long days and long nights. It was all hard work. I thought it was all easy. ",
+        {},
+        "This response has a clearly understandable meaning, even though it is a contradiction since it is claiming that the same work was both overall hard and overall easy . A response being illogical does not make it uninterpretable."
+      ],
+      [
+        "user",
+        "I bet it will be an experience you always remember though so that's cool."
+      ],
+      [
+        "system",
+        "Sure it was cool. what are your hobbies?",
+        {},
+        "This response has a clearly understandable meaning, even if it the question is irrelevant and abrupt."
+      ],
+      [
+        "user",
+        "I like to cook and bake."
+      ],
+      [
+        "system",
+        "i love baking too. my favorite thing to do is bake cookies and remember is precious to me but what good to me is your bad and it is hard to keep going but we all will keep to hardship. weird you know? what's your favorite cookie?",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The middle sentences in this response are vague and highly ambiguous, making it difficult to tell what the intended meaning was supposed to be, so this response is considered to be uninterpretable."
+      ],
+      [
+        "user",
+        "I like molasses cookies, especially at holiday times."
+      ],
+      [
+        "system",
+        "i have never heard of that one. i will have to look it up. what does it taste like?",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "It is very rich and strong tasting, I don't really know how to describe it."
+      ],
+      [
+        "system",
+        "I like snickerdoodles because they are sugarful.",
+        {},
+        "Even though sugarful is not a word in the English language, it is easy to interpret as meaning \"full of sugar\" / \"sugary\" because it combines \"sugar\" and \"-ful\" which are common."
+      ],
+      [
+        "user",
+        "Yeah me too. Do you cook?"
+      ],
+      [
+        "system",
+        "I am really",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "This response is uninterpretable because it ends abruptly with an incomplete response."
+      ],
+      [
+        "user",
+        "Do you have anything you like to cook?"
+      ],
+      [
+        "system",
+        "I make soup and bread. What is your favorite food?",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "I like all kinds of pasta."
+      ]
+    ],
+    "pass_criteria": 1,
+    "remaining": 1
+  },
+  "grammar_onboarding_3": {
+    "dialogue_id": "grammar_onboarding_3",
+    "annotation_tasks": [
+      "grammar"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi, how are you? i just got back from a basketball game. what do you like to do?",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "I'm good. I like to watch shows with my husband."
+      ],
+      [
+        "system",
+        "what are some of your favorite shows to watch with your husband? i always have to have ",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The phrase \"I always have to have\" is incomplete and uninterpretable in its current form."
+      ],
+      [
+        "user",
+        "We are looking for a new show right now, but one that we both really enjoyed is The Office."
+      ],
+      [
+        "system",
+        "i have never heard of the office, but I have watched it before. i will have to look into it.",
+        {},
+        "This response has a clearly understandable meaning, even though it is a contradiction since it is impossible to have watched a show that you have never heard of. A response being illogical does not make it uninterpretable."
+      ],
+      [
+        "user",
+        "Yeah, it is a fun show when you just want to enjoy yourself."
+      ],
+      [
+        "system",
+        "have you ever watched the office? it is on netflix and i've always wanted to watch it.",
+        {},
+        "This response has a clearly understandable meaning, even though it is a low-quality response since they are asking a question that has already been answered."
+      ],
+      [
+        "user",
+        "yes I have."
+      ],
+      [
+        "system",
+        "I always have to have snacks when I am watching tv because I tend to get hangry. what other shows do you like to watch?",
+        {},
+        "Even though slang words may not be considered perfect English, slang words (like \"hangry\") are easily understandable once you are aware of them ."
+      ],
+      [
+        "user",
+        "I also enjoy dramas like This is Us."
+      ],
+      [
+        "system",
+        "Oh I heard of that. It seems to be a sobrespite.",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The phrase \"sobrespite\" does not exist in the English language, and is not close enough to an existing phrase to be interpretable in the context."
+      ],
+      [
+        "user",
+        "You should watch it. It's really good."
+      ],
+      [
+        "system",
+        "You",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "Just saying the word \"you\" is meaningless in the context."
+      ],
+      [
+        "user",
+        "What do you mean?"
+      ],
+      [
+        "system",
+        "I'm not sure. What else do you enjoy doing in your free time?",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "I like to read books a lot."
+      ],
+      [
+        "system",
+        "that's cool. what kind of books do you read? i've read a few. books of you do too. friends tell on books. we lose time.",
+        {
+          "grammar_q": "This response is uninterpretable."
+        },
+        "The final sentences in this response are vague and highly ambiguous, making it difficult to tell what the intended meaning was supposed to be, so this response is considered to be uninterpretable."
+      ],
+      [
+        "user",
+        "I read history books, what about you?"
+      ],
+      [
+        "system",
+        "i like history as well. i read a lot of science fiction. what's your favorite history book?",
+        {},
+        "This response has a clearly understandable meaning."
+      ],
+      [
+        "user",
+        "My favorite is the Diary of a Young Girl by Anne Frank. I think it is important to learn from the mistakes of the past."
+      ],
+      [
+        "system",
+        "i'll have to check it out. I think I'll enjoy it, hopefully it isn't unmatched with my writing style preferences.",
+        {},
+        "Even though \"unmatched\" is not the correct word here, it is close enough to the word \"mismatched\" for the meaning to be understandable."
+      ],
+      [
+        "user",
+        "It was written so beautifully and it is such a moving story that I think anyone could enjoy it. What's your favorite book?"
+      ],
+      [
+        "system",
+        "I am a teacher. What do you do for work?",
+        {},
+        "Even though this response ignores the previous question that was asked, this does not make it uninterpretable."
+      ]
+    ],
+    "pass_criteria": 1,
+    "remaining": 0
+  }
+}

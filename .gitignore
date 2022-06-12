@@ -1,0 +1,47 @@
+*node_modules*
+*DS_Store*
+
+.idea/
+.run/
+
+*__pycache__*
+
+*outputs*
+*.model
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+/collection_and_annotations/behavior_analysis/
+/parlai_internal/agents/cem/data/
+/parlai_internal/agents/cem/save/
+/collection_and_annotations/collected_dialogues/
+/parlai_internal/agents/dukenet/output/
+
+mephisto/
+ParlAI/
+/parlai_internal/agents/conceptflow/data/
+/parlai_internal/agents/conceptflow/saved_models/
+/parlai_internal/agents/decode_agent/DECODE_1.model
+/collection_and_annotations/logs/
+/collection_and_annotations/frontend/_generated/

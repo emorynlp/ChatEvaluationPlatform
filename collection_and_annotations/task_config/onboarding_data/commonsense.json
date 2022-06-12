@@ -1,0 +1,475 @@
+{
+  "commonsense_onboarding_1": {
+    "dialogue_id": "commonsense_onboarding_1",
+    "annotation_tasks": [
+      "commonsense"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi"
+      ],
+      [
+        "system",
+        "hi there, how are you? what do you think about ghosts? i think they are real.",
+        {},
+        "The existence of ghosts is a controversial subject, with many people falling into both sides of the argument. For this reason, it is not accurate to consider the belief in ghosts as a contradiction of common knowledge"
+      ],
+      [
+        "user",
+        "I'm doing okay. I don't think ghosts are real."
+      ],
+      [
+        "system",
+        "i don't think they are real either, but i do believe in them. do you have any hobbies?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "Believing in something generally has the same implications as thinking it is real. The response is therefore illogical and self-contradictory."
+      ],
+      [
+        "user",
+        "I like to sit on the couch, eat potato chips, and watch tv. I am kind of a geek."
+      ],
+      [
+        "system",
+        "You probably like playing sports too. All of my friends do.",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The speaker is making unfounded assumptions about their partner. There is no reason to believe that the partner likes playing sports, in fact it seems likely the opposite is true based on the information presented in the previous turn."
+      ],
+      [
+        "user",
+        "No, not really. I am not that coordinated. "
+      ],
+      [
+        "system",
+        "Oh, I see. I am not ever going there, but not now and definitely not tomorrow. What else do you like to do?",
+        {},
+        "The second sentence in the response is uninterpetable: responses should only be marked if they have a clear intended meaning, but are illogical or contradict common knowledge."
+      ],
+      [
+        "user",
+        "I build models, like model airplanes and trains. My basement is kind of being overrun by them at this point."
+      ],
+      [
+        "system",
+        "that sounds like a lot of fun. i would love to be able to build something like that.",
+        {},
+        "There is no common knowledge associated with this turn. Note: Personal opinions are not considered to be common knowledge, unless the speaker is insinuating its global application (e.g. the opinion is shared by a majority of people)."
+      ],
+      [
+        "user",
+        "Yeah, it is a lot of work, but I just get lost in the process and end up having a blast."
+      ],
+      [
+        "system",
+        "It sounds like you don't enjoy it. I can understand that.",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "It is common knowledge that \"having a blast\" is a positive experience. As a result, it is a contradiction of common knowledge for the speaker on this current turn to acknowledge that their partner is not having a good time with the mentioned activity, since their partner has actually indicated the opposite."
+      ],
+      [
+        "user",
+        "No, not really. What do you like to do?"
+      ],
+      [
+        "system",
+        "i have been working on a project that i really want to do. it's been a long time.",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "Oh, what is the project on?"
+      ],
+      [
+        "system",
+        "it will be a 3d model of a plane. i want to make it look like a real one.",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "Are you having a hard time building it?"
+      ],
+      [
+        "system",
+        "Kind of. It is a life size model.",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "It is implausible to build a life-size model of an airplane. Although this activity is technically possible, most people would expect an explanation to make sense of Alex's response. Since no such explanation is provided by Alex, the response should be marked as a contradiction of common knowledge."
+      ],
+      [
+        "user",
+        "Oh that is really ambitious but awesome! What are you going to do with it?"
+      ],
+      [
+        "system",
+        "I am going put it in the living room of my apartment for decoration.",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "It is common knowledge that planes are larger than apartment living rooms, so it is a contradiction of common knowledge to assert that a life-size model of a plane will fit into the living room."
+      ],
+      [
+        "user",
+        "That will be a conversation starter for sure when people come over."
+      ],
+      [
+        "system",
+        "yes I like to have things to talk about when people come over, but I don't think I will be done soon.",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "Yeah, probably not. Just follow the instructions and you will get there."
+      ],
+      [
+        "system",
+        "that's the plan! anyway i have to leave now, i'm going to a Barack Obama concert tonight.",
+        {},
+        "Although Barack Obama is a former US president, not a musician, this is not considered common knowledge because most people do not learn about Barak Obama through day-to-day experiences. Instead, most people learn about Barak Obama through the news, word-of-mouth, or by reading. "
+      ],
+      [
+        "user",
+        "Okay, no problem. I had a good time too. Bye."
+      ],
+      [
+        "system",
+        "it was a great chat. thanks again. Bye.",
+        {},
+        "Even though it is awkward to prolong the goodbye portion of a conversation in this way, this is a lack of social skill and the utilization of the appropriate skills are not considered as common knowledge. "
+      ],
+      [
+        "user",
+        "Of course! Bye."
+      ],
+      [
+        "system",
+        "Good luck! Bye for now!",
+        {},
+        "Even though it is awkward to prolong the goodbye portion of a conversation in this way, this is a lack of social skill and the utilization of the appropriate skills are not considered as common knowledge. "
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 2
+  },
+  "commonsense_onboarding_2": {
+    "dialogue_id": "commonsense_onboarding_2",
+    "annotation_tasks": [
+      "commonsense"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi there"
+      ],
+      [
+        "system",
+        "What do you like to do for fun? I like to travel. I just got back from New York, it was my first trip outside the US. ",
+        {},
+        "Although New York is not outside the US, this is not common knowledge: even though this fact might be widely known, most people learn geography knowledge such as this through formal education, reading, or being taught. Knowledge must be learned experientially by a majority of people to be considered common knowledge in this task."
+      ],
+      [
+        "user",
+        "I like to go rock climbing with my friends"
+      ],
+      [
+        "system",
+        "That's great, I can't believe I'm talking to a famous rock climber! Do you have a favorite color?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The speaker makes an unfounded assumption that their partner is famous."
+      ],
+      [
+        "user",
+        "I like purple."
+      ],
+      [
+        "system",
+        "Purple is a great color. What is your favorite fruit? I love oranges.",
+        {},
+        "Even though the question does not seem to be too relevant to the current discussion, this is a lack of social skill and the utilization of the appropriate skills are not considered as common knowledge. "
+      ],
+      [
+        "user",
+        "I like strawberries. I find it annoying to have to peel my fruits."
+      ],
+      [
+        "system",
+        "Everyone peels strawberries before eating them. What do you do for a living?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "Strawberries are a common, simple, and widely available fruit to many people from a young age, so it is considered common knowledge how strawberries are eaten. Peeling strawberries is an unusual and uncommon behavior, so the statement \"everyone peels strawberries\" is a contradiction of common knowledge."
+      ],
+      [
+        "user",
+        "I work in retail."
+      ],
+      [
+        "system",
+        "Oh, I see. Do you have any hobbies that you like to do in your free time?",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "I am learning to play the piano."
+      ],
+      [
+        "system",
+        "That's awesome! I've always wanted to learn how to play an instrument. How long have you been playing?",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "I am about six months in. To be honest, I am having a hard time."
+      ],
+      [
+        "system",
+        "You sound like you are really enjoying yourself! What kind of music do you play?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "It is common knowledge that \"having a hard time\" is a negative experience. As a result, it is a contradiction of common knowledge for the speaker on this current turn to acknowledgement the happiness of their partner, since their partner has actually indicated the opposite."
+      ],
+      [
+        "user",
+        "A lot of simple stuff, classical music mostly."
+      ],
+      [
+        "system",
+        "Oh, that's cool. I like classical as well. What other hobbies do you have?",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "I watch tv shows, like everyone else."
+      ],
+      [
+        "system",
+        "That's a good way to pass the time. Do you have a favorite show that you like to watch?",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "I like anime like attack on titan"
+      ],
+      [
+        "system",
+        "I've never watched that show, but I thought the last episode was amazing. Is it good?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The speaker's response is illogical and self-contradictory, since they present both an opinion of one of the show's episodes and claim that they've never watched the show."
+      ],
+      [
+        "user",
+        "yeah but it can be gritty and violent so if that is not your thing, I wouldn't recommend watching it."
+      ],
+      [
+        "system",
+        "Okay, I think it sounds cool. What else do you do in your spare time?",
+        {},
+        "Even though the speaker's partner warns that the show is likely not enjoyable to a particular group, it is not a contradiction of common sense for the speaker to indicate that they think the show sounds cool. It is plausible that the speaker is able to assess their own preferences against the warning and decide that it is still something they are interested in. "
+      ],
+      [
+        "user",
+        "I like to play video games. I've been playing a lot of Dark Souls lately."
+      ],
+      [
+        "system",
+        "Oh the souls are not new, I don't think anyone has.",
+        {},
+        "This response is completely uninterpretable. Responses should only be marked if they have a clear intended meaning, but are illogical or contradict common knowledge."
+      ],
+      [
+        "user",
+        "It is one of the hardest, most frustrating games that exist. I play it in single-player mode only."
+      ],
+      [
+        "system",
+        "That sounds tough. Do you play it with friends?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "It is common knowledge that something that is \"single-player\" is not played with anyone else, so it is a contradiction of common sense for the speaker to ask if their partner plays the game with their friends."
+      ],
+      [
+        "user",
+        "No"
+      ],
+      [
+        "system",
+        "I find it more enjoyable to play with others. ",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 1
+  },
+  "commonsense_onboarding_3": {
+    "dialogue_id": "commonsense_onboarding_3",
+    "annotation_tasks": [
+      "commonsense"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "hi there"
+      ],
+      [
+        "system",
+        "hello, how are you?",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "I am doing good! "
+      ],
+      [
+        "system",
+        "what kind of music do you like?",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "I like all kinds of music."
+      ],
+      [
+        "system",
+        "You must be picky then. what do you do for a living? i work at a grocery store.",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The preference just shared by the speaker's partner does not provide any basis for the conclusion being presented in this turn. In fact, the conclusion is actually a contradiction of the partner's personality which is suggested by the common knowledge associated with their activities. Generally, if you like everything, you are not a picky person."
+      ],
+      [
+        "user",
+        "I work at Ford as a secretary. What do you do at the grocery store?"
+      ],
+      [
+        "system",
+        "i stock the shelves. it's not the most exciting job, but it pays the bills.",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "Well, I am grateful for the work that you do! Makes shopping a lot easier for everyone. Are you thinking of getting a different job that is more exciting at some point?"
+      ],
+      [
+        "system",
+        "I put in my two-week notice already. My last day is on Friday but I hope I get a promotion there soon. what kind of job do you want?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The turn is self-contradictory because the person is both hoping for promotion but also leaving their job."
+      ],
+      [
+        "user",
+        "I like my job as it is, I don't think I would change it."
+      ],
+      [
+        "system",
+        "i guess that's a good way to look at it. i think working for a German company like Ford would be nice. ",
+        {},
+        "Although Ford is a US-based company, this is not a fact most people learn through direct, day-to-day experience. Consider the common knowledge \"bananas are food\". This is common knowledge because most people learn the fact by direct experiences eating bananas. On the other hand, \"Ford is a US-based company\" is not a fact most people experience directly-- instead, they read about it or hear about it from someone else. Therefore, although the response contradicts a fact, it does not contradict any common knowledge."
+      ],
+      [
+        "user",
+        "Yeah, well I like organizing and managing things, and being a secretary lets me do that."
+      ],
+      [
+        "system",
+        "that sounds like a lot of fun!",
+        {},
+        "There is no contradiction of common knowledge associated with this turn. Although some people might think working as a secretary is boring, Sam seems to enjoy her job, and Alex is entitled to a positive opinion of secretary work as well."
+      ],
+      [
+        "user",
+        "Yeah, I also spend much of my day seeing new people and some of them are real characters."
+      ],
+      [
+        "system",
+        "I'm sorry to hear that, sounds like you are pretty bored. do you have any hobbies that you like to do in your spare time?",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The meaning of people being \"characters\" is that they have some unusual and interesting characteristics, which is definitely at odds with them being \"boring\", so this is a contradictory conclusion to draw."
+      ],
+      [
+        "user",
+        "I am training for a marathon right now, so that takes up a lot of my time."
+      ],
+      [
+        "system",
+        "You must have a lot on your plate training for a marathon and taking care of kids at the same time!",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The speaker makes an unfounded assumption that their partner has children. "
+      ],
+      [
+        "user",
+        "It is just something I have always wanted to do and I finally decided to just go for it."
+      ],
+      [
+        "system",
+        "i wish you the best of luck! i'm sure you'll be able to do it.",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "thanks! It is still many months away, but I'm looking forward to it."
+      ],
+      [
+        "system",
+        "that's great! i hope you have a great time. I like to play video games and watch netflix.",
+        {},
+        "There is no contradiction of common knowledge associated with this turn."
+      ],
+      [
+        "user",
+        "What is your favorite game to play?"
+      ],
+      [
+        "system",
+        "i really like it, every time i do i think it was the best.",
+        {},
+        "This response is uninterpretable. Responses should only be marked if they have a clear intended meaning, but are illogical or contradict common knowledge."
+      ],
+      [
+        "user",
+        "My husband plays call of duty actually. He seems to enjoy it too."
+      ],
+      [
+        "system",
+        "that's cool. i'm not much of a gamer myself.",
+        {
+          "commonsense_q": "This response contradicts common knowledge."
+        },
+        "The habitual activities that the speaker has previously shared suggest that they are a \"gamer\", so it is a contradiction of the common knowledge of what it means to be a \"gamer\" for the speaker to claim that they are not one."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 0
+  }
+}

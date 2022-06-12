@@ -1,0 +1,5 @@
+blender_90M: >
+    --model-file zoo:blender/blender_90M/model
+
+examplebot: >
+    --model internal:examplebot

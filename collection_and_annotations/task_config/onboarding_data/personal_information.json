@@ -1,0 +1,566 @@
+{
+  "personal_information_onboarding_1": {
+    "dialogue_id": "personal_information_onboarding_1",
+    "annotation_tasks": [
+      "personal_information"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "Hi."
+      ],
+      [
+        "system",
+        "Hello, how are you?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "I'm in a great mood today. How are you?"
+      ],
+      [
+        "system",
+        "I'm doing well, I'm glad you're in a good mood today!",
+        {},
+        "The speaker \"doing well\" is a temporary mood and thus does not count as personal information. In addition, Alex's expression of being glad is in reaction to Sam's good mood, rather than explicitly sharing her own experiences or preferences. Only mark responses as sharing personal information when it is clear that the speaker is explicitly sharing their own preferences, values, or experiences, rather than reacting to those of others."
+      ],
+      [
+        "user",
+        "Thanks! I just got through my last couple midterm exams today in my college classes."
+      ],
+      [
+        "system",
+        "That's good to hear. What are you studying in college? I'm still in high school.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares that the speaker is in high school, which is life information."
+      ],
+      [
+        "user",
+        "I'm studying psychology."
+      ],
+      [
+        "system",
+        "Psychology always sounded interesting to me. What do you want to do with your degree once you graduate?",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares the speaker's inclination towards Psychology, which is preference information."
+      ],
+      [
+        "user",
+        "I really want to get into a PhD program in clinical psychology, but it's really competitive. I'm not sure my grades are good enough."
+      ],
+      [
+        "system",
+        "That sounds like a good plan. I don't think your grades matter as much as you think for getting into a program.",
+        {},
+        "Although the response shares a belief held by the speaker, that grades don't matter much for getting into a PhD program, beliefs do not count as preference or life information. Notice that the speaker is not explicity sharing whether she thinks grades are important herself; she is merely estimating their importance with respect to Sam getting into a PhD program."
+      ],
+      [
+        "user",
+        "Do you know what you want to do after high school?"
+      ],
+      [
+        "system",
+        "I want to be a veterinarian. I love animals and want to work with them.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares preference information (the speaker's love of animals), as well as the speaker's desire to be a vet. Notice that Alex is not revealing any specific experiences or actions she has taken to fulfill these desires, which would have counted as life information if she had."
+      ],
+      [
+        "user",
+        "That's cool. I have a friend who wants to be a vet. She won't shut up about animals."
+      ],
+      [
+        "system",
+        "That's great! I think it's important to be passionate about what you want to do with your life.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "Although the response is a little vague, Alex is explicitly sharing a personal value she holds about finding passion in one's life. Due to this explicitness, the response should be marked as sharing personal value information."
+      ],
+      [
+        "user",
+        "So in other news, I finally got into a good exercise routine. I've been waking up and running every day for the past week. I haven't been this sore in a while!"
+      ],
+      [
+        "system",
+        "Oh no! I'm sorry to hear that. Maybe you should take a break from running for a while.",
+        {},
+        "The response does not share any personal information (values, preferences, or life information). Although the speaker reacts to their partner's experiences, they are not sharing any specific information about their life, values, or preferences."
+      ],
+      [
+        "user",
+        "Maybe. It's a little tough but I feel really good about it."
+      ],
+      [
+        "system",
+        "I'm actually scheduled to run a marathon a few months from now.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "Alex shares a specific plan she has to run a marathon in this response, which should be marked as sharing life information."
+      ],
+      [
+        "user",
+        "Yeah maybe I'll work all the way up to running a marathon."
+      ],
+      [
+        "system",
+        "That sounds fun. You'll have to let me know when you do!",
+        {},
+        "The response does not share any personal information (values, preferences, or life information). Although the speaker reacts to their partner's experiences, they are not sharing any specific information about their life, values, or preferences."
+      ],
+      [
+        "user",
+        "Do you like running?"
+      ],
+      [
+        "system",
+        "I used to run a lot when I was younger, but I haven't in a long time.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares that the speaker ran when they were younger but haven't recently, which is life information. Since the speaker is not explicit about whether or not they actually like running, the response should not be marked as sharing value/preference information."
+      ],
+      [
+        "user",
+        "When I was younger I was really into basketball. I would play after school every day with my friends."
+      ],
+      [
+        "system",
+        "Wow. I bet you couldn't believe it when that happened.",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "Do you like sports?"
+      ],
+      [
+        "system",
+        "I just don't like watching them. Watching them is just boring to me.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares the speaker's attitude towards watching sports."
+      ],
+      [
+        "user",
+        "Me too, I always fall asleep trying to watch sports."
+      ],
+      [
+        "system",
+        "Oh my gosh, so do I! Do you have any hobbies that keep your interest more?",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The speaker is explicitly sharing that she also falls asleep when watching sports. This is an example of Alex sharing an experience which should be marked as life information. Alex is not explicitly sharing any of her values or preferences."
+      ],
+      [
+        "user",
+        "Well, it's been running recently but I also like to play chess."
+      ],
+      [
+        "system",
+        "I like chess too, but I'm not very good at it.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": "This response shares information about the speaker's life."
+        },
+        "The response shares preference information that the speaker likes chess. It also shares life information about the speaker's lack of skill at chess."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 2
+  },
+  "personal_information_onboarding_2": {
+    "dialogue_id": "personal_information_onboarding_2",
+    "annotation_tasks": [
+      "personal_information"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "Hi."
+      ],
+      [
+        "system",
+        "How are you doing today?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "I'm well, how are you?"
+      ],
+      [
+        "system",
+        "I am doing well, thank you for asking. How has your day been so far?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information). The speaker \"doing well\" is a temporary mood and does not count as personal information."
+      ],
+      [
+        "user",
+        "Not so great. I had to take my dog to the vet, he hasn't been feeling very well."
+      ],
+      [
+        "system",
+        "I love dogs! What is your dog like?",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares the speaker's love of dogs, which is a value."
+      ],
+      [
+        "user",
+        "He seems tired a lot and not himself. He might just be getting old."
+      ],
+      [
+        "system",
+        "That's too bad. I'm sure he misses you a lot. How old is he?",
+        {},
+        "Alex is reacting empathetically to Sam's dog getting old; however, she is not explicitly expressing any of her own values, preferences, or life information."
+      ],
+      [
+        "user",
+        "He's twelve."
+      ],
+      [
+        "system",
+        "That is getting old, I think. Do you know how long dogs usually live for?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "I'm not sure."
+      ],
+      [
+        "system",
+        "What kind of dog do you have? I've always wanted a golden retriever or a labrador.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares the speaker's desire for golden retrievers and labradors. Although it could be inferred from this response that the speaker has never had these dogs before, this information is not explicitly expressed and should not be marked as sharing life information."
+      ],
+      [
+        "user",
+        "He's a german shepard."
+      ],
+      [
+        "system",
+        "German shepherds are great dogs. I had one growing up and he was a great dog.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": "This response shares information about the speaker's life."
+        },
+        "The response shares life information about the speaker's experiences: that they had a dog while growing up. The response also shares the speaker's value towards German Shepards."
+      ],
+      [
+        "user",
+        "When we first got him he would always yip a lot and wake us up in the middle of the night."
+      ],
+      [
+        "system",
+        "That's funny. My dog used to do the same thing.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares life information about the speaker's experiences: that their dog used to yip and wake them up."
+      ],
+      [
+        "user",
+        "Yeah. I used to take him to the park every day, he loved to play fetch with a frisbee."
+      ],
+      [
+        "system",
+        "That sounds like a lot of fun.",
+        {},
+        "Alex is reacting to Sam's experience with her dog, rather than explicitly sharing her own experiences or preferences. Only mark responses as sharing personal information when it is clear that the speaker is explicitly sharing their own preferences, values, or experiences, rather than reacting to those of others."
+      ],
+      [
+        "user",
+        "It was fun. Anyway, this weekend will be good though, my wife and I are going on a trip."
+      ],
+      [
+        "system",
+        "Uh oh, you must be nervous. Where are you guys going? I've never been on a trip like that.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares life information about the speaker's experiences: that they have \"never been on a trip like that.\""
+      ],
+      [
+        "user",
+        "We're going to Miami, it's going to be a long drive but I'm ready to be on the road."
+      ],
+      [
+        "system",
+        "That's a shame. I've always wanted to go to miami. Have you ever been to the beach there?",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares the speaker's wish to go to Miami. Although it could be inferred from this response that the speaker has never been to Miami before, this information is not explicitly expressed and should not be marked as sharing life information."
+      ],
+      [
+        "user",
+        "Yes we went a few years ago and spent lots of time in the ocean."
+      ],
+      [
+        "system",
+        "That's awesome. Do you have a favorite beach you've been to?",
+        {},
+        "Alex is reacting to Sam's trip, rather than explicitly sharing her own experiences or preferences. Only mark responses as sharing personal information when it is clear that the speaker is explicitly sharing their own preferences, values, or experiences, rather than reacting to those of others."
+      ],
+      [
+        "user",
+        "Not really."
+      ],
+      [
+        "system",
+        "That's too bad. What's your favorite thing to do at a beach? Mine is surfing.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares the speaker's favorite beach activity, surfing, which is a preference. Although it could be inferred from this response that the speaker has experience surfing, this information is not explicitly expressed and should not be marked as sharing life information."
+      ],
+      [
+        "user",
+        "Surfing is fun, but we also like to just relax and walk around."
+      ],
+      [
+        "system",
+        "That's great. I think that taking time to relax is an important part of life.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "Although the response is a little vague, Alex is explicitly sharing a personal value she holds about relaxing. Due to this explicitness, the response should be marked as sharing personal value information."
+      ],
+      [
+        "user",
+        "Oh that's too bad."
+      ],
+      [
+        "system",
+        "Yeah, but I'll get to take some vacation time soon.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares life information about the speaker; that they will get vacation time off work soon."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 1
+  },
+  "personal_information_onboarding_3": {
+    "dialogue_id": "personal_information_onboarding_3",
+    "annotation_tasks": [
+      "personal_information"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "Hi."
+      ],
+      [
+        "system",
+        "Hello, how are you?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "I'm good, just a little stressed about work."
+      ],
+      [
+        "system",
+        "Oh, I'm sorry to hear that. What do you do for a living, if you don't mind me asking?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information). Although the speaker reacts to their partner's experiences, they are not sharing any specific information about their life, values, or preferences."
+      ],
+      [
+        "user",
+        "I'm a software engineer. We have a project deadline coming up is all."
+      ],
+      [
+        "system",
+        "Oh okay. I'm a web developer. Do you think you'll be able to finish your project by the deadline?",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares information about the speaker's life: that they're a web developer."
+      ],
+      [
+        "user",
+        "I don't know. I guess we're about to find out."
+      ],
+      [
+        "system",
+        "I wish you the best of luck. ",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "Thanks. I do have a really good job though overall. My coworkers and I get along great, so usually things are smooth sailing."
+      ],
+      [
+        "system",
+        "I'm glad to hear that. Working with good people is so important.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "Although the response is a little vague, Alex is explicitly sharing a personal value she holds about her work environment. Due to this explicitness, the response should be marked as sharing personal value information."
+      ],
+      [
+        "user",
+        "Yeah. The last place I worked at was such a zoo, it wasn't that they were bad people but I just didn't get them, you know?"
+      ],
+      [
+        "system",
+        "Yeah, I know what you mean. I've worked with a lot of people like that before.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares information about the speaker's past working experiences."
+      ],
+      [
+        "user",
+        "Like one guy would always email me instead of talking face to face even though we sit like ten feet from each other. It got the job done but, I don't know."
+      ],
+      [
+        "system",
+        "Yeah, that sounds annoying. I'm sorry you have to deal with that. Have you thought about looking for a new job?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information). Although the speaker reacts to their partner's experiences, they are not sharing any specific information about their life, values, or preferences."
+      ],
+      [
+        "user",
+        "Well I just started the one I'm at now about two months ago."
+      ],
+      [
+        "system",
+        "Is your work different now that you've moved jobs?",
+        {},
+        "The response does not share any personal information (values, preferences, or life information)."
+      ],
+      [
+        "user",
+        "I've been writing a lot of test code, which most people hate but it's definitely my jam."
+      ],
+      [
+        "system",
+        "Well that sounds frustrating, but I'm impressed you can do something like that. I'm not very good at math.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares information about the speaker's math skill, which is life information."
+      ],
+      [
+        "user",
+        "Oh me neither. I can't even do algebra to save my life, thankfully there isn't much math to it."
+      ],
+      [
+        "system",
+        "Yeah, I don't think I've touched algebra since back in high school. What do you like to do in your free time?",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "Alex is sharing that she hasn't done any algebra in a long time, which is life information."
+      ],
+      [
+        "user",
+        "Usually I just play video games."
+      ],
+      [
+        "system",
+        "That's cool. What's your favorite video game to play? I like to play games too.",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": ""
+        },
+        "The response shares preference information: that the speaker likes playing games. Although it could be inferred that the speaker plays video games regularly, it is not being explicitly shared in this response, so the response should not be marked as sharing life information."
+      ],
+      [
+        "user",
+        "I've been playing Dark Souls."
+      ],
+      [
+        "system",
+        "I've never played dark souls. I've heard of it, but never played it. What is it about?",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares experience information: that the speaker has never played Dark Souls."
+      ],
+      [
+        "user",
+        "It's about a zombie who can't stop falling off cliffs and really likes bonfires."
+      ],
+      [
+        "system",
+        "Sounds interesting. Do you play any other games?",
+        {},
+        "Although the speaker is reacting to what their partner shared with interest, they are not clearly revealing any information about their own preferences or life."
+      ],
+      [
+        "user",
+        "Well I'm getting a VR headset soon, I'm excited to try it out because all my friends are raving about it."
+      ],
+      [
+        "system",
+        "That sounds like a lot of fun. I don't think I've ever tried one of those.",
+        {
+          "experience_q": "This response shares information about the speaker's life.",
+          "value_q": ""
+        },
+        "The response shares experience information: that the speaker has not tried VR. Although the speaker reacts to their partner's experiences, they are not explicitly sharing any specific information about their own values or preferences, so this response should not be marked as sharing preference/value information."
+      ],
+      [
+        "user",
+        "Yeah I'm excited."
+      ],
+      [
+        "system",
+        "What other games do you like to play? I'm always trying out new games, and I especially like games with good stories. ",
+        {
+          "value_q": "This response shares information about the speaker's preferences/values.",
+          "experience_q": "This response shares information about the speaker's life."
+        },
+        "The response shares the speaker's tendency/habit to try new games, which is life information. The response also shares the speaker's preference for games with good stories."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 0
+  }
+}

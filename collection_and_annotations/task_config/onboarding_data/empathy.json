@@ -1,0 +1,579 @@
+{
+  "empathy_onboarding_1": {
+    "dialogue_id": "empathy_onboarding_1",
+    "annotation_tasks": [
+      "empathy"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "Hi."
+      ],
+      [
+        "system",
+        "Hello, how are you?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "I'm good, just a little stressed about work."
+      ],
+      [
+        "system",
+        "Oh, I'm sorry to hear that. What do you do for a living, if you don't mind me asking?",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"Oh, I'm sorry to hear that\" acknowledges Sam being stressed about work. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "I'm a software engineer. We have a project deadline coming up is all."
+      ],
+      [
+        "system",
+        "That's good to hear. Do you think you'll be able to finish it by the deadline?",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Alex shows a lack of understanding of Sam's feelings by saying \"That's good to hear,\" since Sam stated clearly that she was stressed out by the deadline. Therefore, the response has a lack of empathy."
+      ],
+      [
+        "user",
+        "I don't know. I guess we're about to find out."
+      ],
+      [
+        "system",
+        "I wish you the best of luck. I'm sure you'll knock it out of the park.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex reassures Sam, showing understanding that Sam is anxious about her work deadline. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Thanks. I do have a really good job though overall. My coworkers and I get along great, so usually things are smooth sailing."
+      ],
+      [
+        "system",
+        "I'm glad to hear that. It's always nice to work with people you get along with.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex's response is acknowledging Sam's positivity about her job and coworkers, and therefore should be marked as empathetic."
+      ],
+      [
+        "user",
+        "Yeah. The last place I worked at was such a zoo, it wasn't that they were bad people but I just didn't get them, you know?"
+      ],
+      [
+        "system",
+        "Yeah, I know what you mean. I've worked with a lot of people like that before.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex's response indicates an understanding of Sam's situation, which Sam seems to feel awkward and unsure about. This provides support to Sam by showing him he is not alone."
+      ],
+      [
+        "user",
+        "Like one guy would always email me instead of talking face to face even though we sit like ten feet from each other. It got the job done but, I don't know."
+      ],
+      [
+        "system",
+        "Yeah, that sounds annoying. I'm sorry you have to deal with that. Have you thought about looking for a new job?",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"that sounds annoying\" and \"I'm sorry you have to deal with that\" shows an understanding of Sam's feelings dealing with her previous coworker. Even though Alex misunderstands that Sam no longer works at that job, her understanding of Sam's feelings is correct. Therefore, the response should be marked as empathetic."
+      ],
+      [
+        "user",
+        "Well I just started the one I'm at now about two months ago."
+      ],
+      [
+        "system",
+        "Is your work different now that you've moved jobs?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The current turn is appropriate but not empathetic, because the speaker is not signaling an understanding of their partner's emotions. Since Alex doesn't show any misunderstanding of Sam's emotions this turn, the turn should not be marked as a lack of empathy."
+      ],
+      [
+        "user",
+        "I've been writing a lot of test code, which most people hate but it's definitely my jam."
+      ],
+      [
+        "system",
+        "Well that sounds frustrating, but I'm impressed you can do something like that. I'm not very good at math.",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Alex shows a misunderstanding of Sam's feelings by saying \"that sounds frustrating\" since Sam said she likes her work. Therefore, the response has a lack of empathy."
+      ],
+      [
+        "user",
+        "Oh me neither. I can't even do algebra to save my life, thankfully there isn't much math to it."
+      ],
+      [
+        "system",
+        "Yeah, I'm glad I don't have to worry about that too. What do you like to do in your free time?",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex's response reflects Sams relief at not having to do algebra anymore, showing that she understands Sam's emotional experiences."
+      ],
+      [
+        "user",
+        "Usually I just play video games."
+      ],
+      [
+        "system",
+        "That's cool. What's your favorite video game to play? I like to play games too.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Although Alex's reaction to Sam's experience (\"that's cool\") is not very informative, it clearly conveys an appropriate sentiment and understanding of the experience Sam shares."
+      ],
+      [
+        "user",
+        "I've been playing Dark Souls."
+      ],
+      [
+        "system",
+        "I've never played dark souls. I've heard of it, but never played it. What is it about?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The turn does not demonstrate an understanding of any of Sam's emotions in particular, but is appropriate in the context. Therefore, the turn is neither empathetic nor lacking empathy."
+      ],
+      [
+        "user",
+        "It's about a zombie who can't stop falling off cliffs and really likes bonfires."
+      ],
+      [
+        "system",
+        "Sounds interesting. I'll have to check it out sometime. Do you play any other games?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "Well I'm getting a VR headset soon, I'm excited to try it out because all my friends are raving about it."
+      ],
+      [
+        "system",
+        "That sounds like a lot of fun. I don't think I've ever tried one of those.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That sounds like fun\" is a demonstration of her understanding of Sam's excitement. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Yeah I'm excited."
+      ],
+      [
+        "system",
+        "What other games do you like to play? I'm always looking for new ones to try out.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The turn does not demonstrate an understanding of any of Sam's emotions in particular, but is appropriate in the context. Therefore, the turn is neither empathetic nor lacking empathy."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 2
+  },
+  "empathy_onboarding_2": {
+    "dialogue_id": "empathy_onboarding_2",
+    "annotation_tasks": [
+      "empathy"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "Hi."
+      ],
+      [
+        "system",
+        "Hello, how are you?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "I'm in a great mood today. How are you?"
+      ],
+      [
+        "system",
+        "I'm doing well, thanks for asking. I'm glad you're in a good mood today!",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"I'm glad you're in a good mood\" is a straightforward demonstration of her understanding of Sam's emotion. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Thanks! I just got through my last couple midterm exams today in my college classes."
+      ],
+      [
+        "system",
+        "That's good to hear. What are you studying in college? I'm still in high school.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That's good\" shows an understanding of Sam's relief of being done with her exams. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "I'm studying psychology."
+      ],
+      [
+        "system",
+        "Psychology sounds interesting. What do you want to do with your degree once you graduate?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "I really want to get into a PhD program in clinical psychology, but it's really competitive. I'm not sure my grades are good enough."
+      ],
+      [
+        "system",
+        "That sounds like a good plan. I don't think your grades matter as much as you think they do.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex's response reassures Sam, showing an understanding that Sam is anxious about getting into a PhD program. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "What are you planning to do after high school?"
+      ],
+      [
+        "system",
+        "I want to be a veterinarian. I love animals and want to work with them.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "That's cool. I have a friend who wants to be a vet. She won't shut up about animals."
+      ],
+      [
+        "system",
+        "Sounds like a good fit! I think it's important to be passionate about what you want to do with your life.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex gives a response that shows an understanding about Sam's friends feelings, so it should be marked as empathetic."
+      ],
+      [
+        "user",
+        "So in other news, I finally got into a good exercise routine. I've been waking up and running every day for the past week. I haven't been this sore in a while!"
+      ],
+      [
+        "system",
+        "Oh no! I'm sorry to hear that. Maybe you should take a break from running for a while.",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Even though Sam says she's sore from running, Sam is clearly very happy about her new excercise routine overall. Therefore, Alex saying \"I'm sorry to hear that\" shows a lack of understanding of Sam's emotions."
+      ],
+      [
+        "user",
+        "Maybe. It's a little tough but I feel really good about it."
+      ],
+      [
+        "system",
+        "That's good to hear. I'm sure you'll get back to where you were in no time.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That's good to hear\" shows an understanding of Sam's positivity about her exercise routine. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Yeah maybe I'll work all the way up to running a marathon."
+      ],
+      [
+        "system",
+        "That sounds great. You'll have to let me know when you do so I can join you.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That sounds great\" shows an understanding of Sam's excitement for running. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Do you like running?"
+      ],
+      [
+        "system",
+        "I used to run a lot when I was younger, but I haven't in a long time.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "When I was younger I was really into basketball. I would play after school every day with my friends."
+      ],
+      [
+        "system",
+        "Wow. I bet you couldn't believe it when that happened.",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Alex shows a lack of understanding of Sam's feelings by saying \"I bet you couldn't believe it\" since there is nothing surprising about the experiences Sam shared. Therefore, the response has a lack of empathy."
+      ],
+      [
+        "user",
+        "Do you like sports?"
+      ],
+      [
+        "system",
+        "I just don't like watching them. I like to play them, but watching them is boring to me.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "Me too, I always fall asleep trying to watch sports."
+      ],
+      [
+        "system",
+        "Yeah, I can totally relate, they are so boring. Do you have any hobbies that keep your interest more?",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying that she can relate to Sam's boredom while watching sports shows an understanding of that feeling. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Well, it's been running recently but I also like to play chess."
+      ],
+      [
+        "system",
+        "I like chess too, but I'm not very good at it. What is your favorite chess piece?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "Although Sam shares that she likes chess in the previous turn, and it could be inferred that Sam enjoys chess, nothing in Alex's response is clearly demonstrating an understanding of Sam's feelings. However, the response is appropriate in the context. Therefore, the response should be marked as neither empathetic nor a lack of empathy."
+      ],
+      [
+        "user",
+        "I would say the queen, but I usually end up losing it early in the game."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 1
+  },
+  "empathy_onboarding_3": {
+    "dialogue_id": "empathy_onboarding_3",
+    "annotation_tasks": [
+      "empathy"
+    ],
+    "bot_persona": [],
+    "turns": [
+      [
+        "user",
+        "Hi."
+      ],
+      [
+        "system",
+        "How are you doing today?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "I'm well, how are you?"
+      ],
+      [
+        "system",
+        "I am doing well, thank you for asking. How has your day been so far?",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "Alex does not explicitly demonstrate an understanding of Sam's well-being shared in the previous turn, but Alex gives an appropriate response. Therefore, the turn is not empathetic, and the turn doesn't show a lack of empathy."
+      ],
+      [
+        "user",
+        "Not so great. I had to take my dog to the vet, he hasn't been feeling very well."
+      ],
+      [
+        "system",
+        "I love dogs. What's your dog like?",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Sam is clearly distressed about her dog feeling unwell, but Alex's response ignores Sam's feelings in an inappropriate way. Therefore, the response shows a lack of empathy."
+      ],
+      [
+        "user",
+        "He seems tired a lot and not himself. He might just be getting old."
+      ],
+      [
+        "system",
+        "That's too bad. I'm sure he misses you a lot. How old is he?",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That's too bad\" shows an understanding of how Sam must feel about her dog becoming older and unwell. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "He's twelve."
+      ],
+      [
+        "system",
+        "That is getting old, I think. ",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "Yeah, maybe."
+      ],
+      [
+        "system",
+        "What kind of dog do you have? I've always wanted a golden retriever or a labrador.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "He's a german shepard."
+      ],
+      [
+        "system",
+        "German shepherds are great dogs. I had one growing up and he was a great dog.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "The previous turn does not suggest any particular emotional state of the speaker, so there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the speaker is not signaling an understanding of their partner's emotions."
+      ],
+      [
+        "user",
+        "When we first got him he would always race back in the forth in the hallway out of nowhere, getting in everyone's way. It was a lot but it was cute."
+      ],
+      [
+        "system",
+        "That's a good memory to look back on. My dog used to do the same thing. He was a good boy though.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex's response shows an understanding that Sam sometimes felt annoyed by her dog's rambunctiousness in its youth, but nevertheless looks back fondly on those moments. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Yeah. I used to take him to the park every day, he loved to play fetch with a frisbee."
+      ],
+      [
+        "system",
+        "That sounds like a lot of fun. I wish I could have a dog, but I'm allergic to them.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That sounds like a lot of fun\" shows an understanding of Sam's nostalgia for the fun times she used to have with her dog in the park. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "It was fun. Anyway, this weekend will be good though, my wife and I are going on a trip."
+      ],
+      [
+        "system",
+        "Uh oh, you must be nervous. Where are you guys going? I've never been on a trip like that.",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Alex shows a lack of understanding of Sam's feelings by saying \"uh oh, you must be nervous,\" since there is no reason to think Sam would be nervous about her trip in this context. Therefore, the response has a lack of empathy."
+      ],
+      [
+        "user",
+        "We're going to Miami, it's going to be a long drive but I'm ready to be on the road."
+      ],
+      [
+        "system",
+        "That's a shame. I've always wanted to go to miami. Have you ever been to the beach there?",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Alex shows a lack of understanding of Sam's feelings by saying \"That's a shame\" since Sam clearly is looking forward to the trip and doesn't mind the drive. Therefore, the response has a lack of empathy."
+      ],
+      [
+        "user",
+        "Yes we went a few years ago and spent lots of time in the ocean."
+      ],
+      [
+        "system",
+        "That sounds like a lot of fun. Do you have a favorite beach you've been to?",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That sounds like a lot of fun\" shows an understanding that Sam enjoyed her time in the ocean. Although Sam didn't share her feelings about spending time in the ocean explicitly, it is reasonably inferred that she had fun because (1) people generally enjoy beaches, (2) she spent lots of time there, and (3) she's looking forward to going back to the same place. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Not really."
+      ],
+      [
+        "system",
+        "That's too bad. What's your favorite thing to do at a beach? Mine is surfing.",
+        {
+          "Is this response empathetic?": "No, the speaker misinterprets their partner's emotions or inappropriately ignores their partner's feelings."
+        },
+        "Alex shows a lack of understanding of Sam's feelings by saying \"that's too bad,\" since there is nothing negative about what Sam shared. Therefore, the response has a lack of empathy."
+      ],
+      [
+        "user",
+        "Surfing is fun, but we also like to just relax and walk around."
+      ],
+      [
+        "system",
+        "That's fun too. I wish I had more time to do that, but I work so much.",
+        {
+          "Is this response empathetic?": "Yes, the speaker demonstrates an understanding of their partner's emotions."
+        },
+        "Alex saying \"That's fun too\" is a demonstration of her understanding that Sam enjoys relaxing and walking around. Therefore, the response is empathetic."
+      ],
+      [
+        "user",
+        "Oh that's too bad."
+      ],
+      [
+        "system",
+        "Yeah, but I'm sure I'll get to take some vacation time soon.",
+        {
+          "Is this response empathetic?": "Not applicable, the speaker neither shows an understanding or misunderstanding of their partner's emotions."
+        },
+        "In the previous turn, Sam sympathizes with Alex's situation, but is not sharing or implying her own feelings. Therefore, there is no need for an empathetic response. Accordingly, the current turn is not empathetic, because the Alex is not signaling an understanding of Sam's emotions."
+      ]
+    ],
+    "pass_criteria": 2,
+    "remaining": 0
+  }
+}

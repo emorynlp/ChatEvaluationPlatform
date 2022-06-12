@@ -1,0 +1,151 @@
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+h4 {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.button:disabled {
+    background-color: darkgray;
+}
+
+/*fieldset.likertScale .likertText {*/
+/*  width: 200px;*/
+/*}*/
+
+.onboarding-description {
+    font-size: 22px;
+    background-color: lightgrey;
+    border: 3px;
+    border-style: solid;
+    border-color: grey;
+    padding: 1em;
+    max-width: 80%;
+    margin: auto;
+}
+
+.feedback-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkred;
+}
+
+.feedback-str {
+    color: darkred;
+}
+
+.progress-str {
+    font-size: 18px;
+}
+
+.task-description {
+    font-size: 16px;
+}
+
+.sam-response {
+    color: blue;
+    text-indent: 1em;
+    display: block;
+}
+
+.alex-response {
+    color: green;
+    text-indent: 1em;
+    display: block;
+}
+
+hr {
+    border-color: black;
+}
+
+tr {
+    border-bottom: 1pt solid black;
+    border-top: 1pt solid black;
+}
+
+.borderless-tr {
+    border-bottom: none;
+    border-top: none;
+}
+
+details > summary {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '▶️ Show ';
+}
+
+details[open] > summary::before {
+    content: '🔽 Hide ';
+}
+
+details {
+    border: none;
+    padding: 0.5rem;
+    color: grey;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
+
+.collapsible {
+  background-color: #bbbbbb;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #9f9f9f;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+li {
+    margin: 5px;
+}

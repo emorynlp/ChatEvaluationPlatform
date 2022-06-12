@@ -1,0 +1,51 @@
+#@package _global_
+defaults:
+  - /mephisto/blueprint: behavior_analysis_blueprint
+  - /mephisto/architect: local
+  - /mephisto/provider: mock
+mephisto:
+  log_level: 'debug'
+  architect:
+    hostname: '0.0.0.0'
+    port: '3007'
+  blueprint:
+    max_resp_time: 3600
+    block_qualification: grammatical_likert_turn_block
+    model_opt_path: ${task_dir}/task_config/model_opts.yaml
+    num_turns: 2
+    task_model_parallel: true
+    check_acceptability: false
+    include_persona: false
+    conversation_start_mode: 'hi'
+    conversations_needed_string: "blender_90M|rerank_blender_90M:3"
+    annotations_config_path: ${task_dir}/task_config/annotation_buckets.json
+
+#    onboarding_qualification: grammatical_likert_turn_onboarding
+#    onboard_task_data_path: ${task_dir}/task_config/onboarding_data/grammatical_likert_turn.json
+    gold_qualification_base: grammatical_likert_turn_gold
+    passed_qualification_name: grammatical_likert_turn_screen
+
+    do_collect_dialogue: false
+    num_bots: 2
+    do_interactive_online_annotations: ""
+    do_interactive_offline_annotations: []
+
+    do_external_annotations: true
+    data_jsonl: ${task_dir}/task_config/task_data/grammatical_likert_turn.jsonl
+    subtasks_per_unit: 1
+    units_per_assignment: 2
+    ratio_max_units: 0.5
+    annotation_duration_in_seconds: 3600 # 2 hours
+    worker_blocklist_paths: ${task_dir}/task_config/blocked_workers.txt
+  task:
+    allowed_concurrent: 3
+    assignment_duration_in_seconds: 3600 # 2 hours
+    max_num_concurrent_units: 0  # 0 means infinite; set this to a positive integer to limit concurrent HITs and prevent crashes
+    maximum_units_per_worker: 0
+    task_description: |
+      Rate ~15 turns within a single conversation on 1 dimension
+    task_name: grammatical_likert_turn
+    task_reward: 0.32
+    task_tags: "dialogue,conversation,chatbot,annotation,label,evaluation,emory chatbot evaluation"
+    task_title: "Emory Chatbot Evaluation - Rating Conversation Turns"
+monitoring_log_rate: 300

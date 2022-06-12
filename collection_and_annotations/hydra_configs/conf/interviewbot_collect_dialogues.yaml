@@ -1,0 +1,48 @@
+#@package _global_
+defaults:
+  - /mephisto/blueprint: behavior_analysis_blueprint
+  - /mephisto/architect: local
+  - /mephisto/provider: mock
+mephisto:
+  log_level: 'debug'
+  architect:
+    hostname: '0.0.0.0'
+    port: '3012'
+  blueprint:
+    num_turns: 10
+    max_resp_time: 3600
+    block_qualification: stage_1_block
+    model_opt_path: ${task_dir}/task_config/interviewbot/model_opts.yaml
+    task_model_parallel: true
+    check_acceptability: false
+    include_persona: false
+    conversation_start_mode: 'hi'
+    conversations_needed_string: "examplebot:5"
+    annotations_config_path: ${task_dir}/task_config/interviewbot/annotation_buckets.json
+    chat_startup_instructions_path: ${task_dir}/task_config/interviewbot/chat_startup_instructions.html
+    do_collect_dialogue: true
+    num_bots: 1
+    do_interactive_online_annotations: "interviewbot_optional"
+    do_interactive_offline_annotations: [
+      ["quality_likert"],
+    ]
+    gold_qualification_base: collectdialogue_gold
+    passed_qualification_name: collectdialogue_screen
+
+    do_external_annotations: false
+    subtasks_per_unit: 6
+    data_jsonl: ${task_dir}/task_config/pilot3.jsonl
+    units_per_assignment: 10
+    annotation_duration_in_seconds: 7200 # 2 hours
+  task:
+    allowed_concurrent: 1
+    assignment_duration_in_seconds: 7200 # 2 hours
+    max_num_concurrent_units: 0  # 0 means infinite; set this to a positive integer to limit concurrent HITs and prevent crashes
+    maximum_units_per_worker: 0
+    task_name: collect_dialogues # identifies task continuations across multiple runs - change name if don't want previous work to be used for current run
+    task_reward: 1
+    task_tags: "chat,conversation,dialog,dialogue,partner"
+    task_title: "Chat with a fellow conversationalist!"
+mturk:
+  worker_blocklist_paths: null
+monitoring_log_rate: 300
