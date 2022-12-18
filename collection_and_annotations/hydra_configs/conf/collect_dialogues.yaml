@@ -17,7 +17,7 @@ mephisto:
     check_acceptability: false
     include_persona: true
     conversation_start_mode: 'hi'
-    conversations_needed_string: "rerank_blender|blender2_3B:20,rerank_blender|bart_fid_rag_bcb:20,rerank_blender|emora:20" # <-- FOR PAIRED DIALOGUE COLLECTION
+    conversations_needed_string: "rerank_blender|blender2_3B:20,rerank_blender|bart_fid_rag_bcb:20" # <-- FOR PAIRED DIALOGUE COLLECTION
 #    conversations_needed_string: "blender_90M:30,emora:30,rerank_blender:30" <-- FOR SINGLE DIALOGUE COLLECTION
     annotations_config_path: ${task_dir}/task_config/annotation_buckets.json
 
@@ -33,7 +33,6 @@ mephisto:
     gold_qualification_base: collectdialogue_gold
     passed_qualification_name: collectdialogue_screen
     do_external_annotations: false
-    subtasks_per_unit: 6
     data_jsonl: ${task_dir}/task_config/pilot3.jsonl
     units_per_assignment: 10
     annotation_duration_in_seconds: 7200 # 2 hours

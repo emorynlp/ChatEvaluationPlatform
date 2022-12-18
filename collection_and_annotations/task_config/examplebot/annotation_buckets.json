@@ -1,0 +1,48 @@
+{
+  "config": {
+    "thumbsup": {
+      "config": "nondetails_nonhelp_button_flow",
+      "task_title": "thumbsup",
+      "indices": "odd",
+      "options": {
+        "(Thumbs up) This response is great": {
+          "_type_": {
+            "checkbox": {}
+          },
+          "thumbs up": {}
+        },
+        "(Thumbs down) This response is bad": {
+          "_type_": {
+            "checkbox": {}
+          },
+          "thumbs down": {}
+        }
+      }
+    },
+    "quality_likert": {
+      "config": "likert-5-dialogue",
+      "task_title": "quality_likert",
+      "indices": "no_indices",
+      "options": [
+        {
+          "label": "Quality",
+          "question": "On a scale of 1 (least) to 5 (most), how much would you like to talk to SPEAKER X again?"
+        }
+      ],
+      "require": {
+        "level": "dialogue"
+      }
+    },
+    "consistency_label": {
+      "question": "Select ALL labels that apply:",
+      "config": "multiselect",
+      "task_title": "consistency_label",
+      "indices": "odd",
+      "options": [
+        {"value": "cont_s_ctxt", "label": "Contradicts self context"},
+        {"value": "cont_p_ctxt", "label": "Contradicts partner context"},
+        {"value": "redundant", "label":  "Redundant"}
+      ]
+  }
+  }
+}

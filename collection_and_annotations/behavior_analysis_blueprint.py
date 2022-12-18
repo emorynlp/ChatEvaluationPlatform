@@ -184,20 +184,8 @@ class BaseBehaviorAnalysisBlueprintArgs(ParlAIChatBlueprintArgs):
         default=True, metadata={"help": "whether to load static dialogues for the worker to annotate"}
     )
 
-    subtasks_per_unit: int = field(
-        default=MISSING, metadata={"help": "Number of subtasks/comparisons to do per unit"}
-    )
-
     data_jsonl: str = field(
         default=MISSING, metadata={"help": "Path to JSON-L file containing task data"}
-    )
-
-    units_per_assignment: int = field(
-        default=MISSING, metadata={"help": "The max number of workers you want to do each assignment"}
-    )
-
-    ratio_max_units: float = field(
-        default=MISSING, metadata={"help": "The ratio of assignments for which the max units will be done; other assignments only done once"}
     )
 
     # universal annotation args
@@ -553,12 +541,12 @@ class BehaviorAnalysisBlueprint(BaseBehaviorAnalysisBlueprint, UseGoldUnit, Scre
 
             # Now chunk the data into groups of <num_subtasks>
             grouped_data = []
-            for i in range(0, len(self._initialization_data_dicts), args.blueprint.subtasks_per_unit):
-                chunk = self._initialization_data_dicts[i: i + args.blueprint.subtasks_per_unit]
+            for i in range(0, len(self._initialization_data_dicts), 1):
+                chunk = self._initialization_data_dicts[i: i + 1]
                 grouped_data.append(chunk[0])
             self._initialization_data_dicts = grouped_data
             # Last group may have less unless an exact multiple
-            print(f'Grouped data into {len(self._initialization_data_dicts)} tasks with {args.blueprint.subtasks_per_unit} subtasks each.')
+            print(f'Grouped data into {len(self._initialization_data_dicts)} tasks with {1} subtasks each.')
 
     def _get_shared_models(self, args: "DictConfig") -> Dict[str, dict]:
         with open(args.blueprint.model_opt_path) as f:

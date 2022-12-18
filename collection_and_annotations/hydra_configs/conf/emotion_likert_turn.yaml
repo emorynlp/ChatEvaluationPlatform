@@ -20,8 +20,6 @@ mephisto:
     conversations_needed_string: "blender_90M|rerank_blender_90M:3"
     annotations_config_path: ${task_dir}/task_config/annotation_buckets.json
 
-#    onboarding_qualification: emotion_likert_turn_onboarding
-#    onboard_task_data_path: ${task_dir}/task_config/onboarding_data/emotion_likert_turn.json
     gold_qualification_base: emotion_likert_turn_gold
     passed_qualification_name: emotion_likert_turn_screen
 
@@ -32,9 +30,6 @@ mephisto:
 
     do_external_annotations: true
     data_jsonl: ${task_dir}/task_config/task_data/emotion_likert_turn.jsonl
-    subtasks_per_unit: 1
-    units_per_assignment: 2
-    ratio_max_units: 0.5
     annotation_duration_in_seconds: 3600 # 2 hours
     worker_blocklist_paths: ${task_dir}/task_config/blocked_workers.txt
   task:
