@@ -1,8 +1,21 @@
 -----
 
+# Introduction
+
+**ChatEvaluationPlatform** is a [Parlai-crowdsourcing-based](https://github.com/facebookresearch/ParlAI/blob/main/parlai/crowdsourcing/README.md) framework for collecting dialogues and dialogue annotations for dialogue agents. 
+
+It was created for the ABC-Eval project:
+
+* For more details, read [Don't Forget Your ABC's: Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems](https://arxiv.org/abs/2212.09180)
+* Dialogues labeled for various behaviors (from the above paper) can be found in `data/data.json`. 
+* Python script `data/explore_data.py` provides an example of interfacing with the data.
+
+
 # Overview
 
-**ChatEvaluationPlatform** is a [Parlai-crowdsourcing-based](https://github.com/facebookresearch/ParlAI/blob/main/parlai/crowdsourcing/README.md) framework for collecting dialogues and dialogue annotations for dialogue agents. It is a modular framework, where you can select specific subsets of annotations to collect. It provides built-in annotation setups for 40 labels, including pairwise comparisons, likert-style ratings, and dialogue-specific behaviors. More details of the built-in annotation setups and labels can be found in the paper: Don't Forget Your ABC's: Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems (link forthcoming).
+
+
+**ChatEvaluationPlatform** is a modular framework, where you can select specific subsets of annotations to collect. It provides built-in annotation setups for 40 labels, including pairwise comparisons, likert-style ratings, and dialogue-specific behaviors. More details of the built-in annotation setups and labels can be found in the paper: Don't Forget Your ABC's: Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems (link forthcoming).
 
 Running an evaluation project using this platform causes a set of tasks to be generated for a specified setup. These tasks are accessed through a web browser. When running the platform locally, 
 the links to the generated tasks look like: `localhost:3008/?worker_id=<WORKER_ID>&assignment_id=<ASSIGNMENT_ID>` where the choice of `<WORKER_ID>` denotes a unique human participant and the choice of `<ASSIGNMENT_ID>` denotes a unique assignment for the specified worker id. Upon a new connection using the appropriate link, the underlying tasks are given randomly to the connected participant. It is also possible to use **ChatEvaluationPlatform** to deploy tasks to crowdsourcing platforms like Amazon Mechanical Turk; we defer to the [Parlai/Mephisto crowdsourcing information](https://github.com/facebookresearch/ParlAI/blob/main/parlai/crowdsourcing/README.md) for further details.
